@@ -1,0 +1,1683 @@
+{
+"UNIQUE_CONSTRAINTS": [
+	{
+		"schema_name" : "dbo",
+		"table_name" : "BYD_NIVEL_DESCONTO",
+		"constraint_name" : "BYDNIVDES_DIASEMANA_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "BYD_NIVEL_DESCONTO",
+		"constraint_name" : "BYDNIVDES_DIASEMANA_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "BYD_NIVEL_DESCONTO",
+		"constraint_name" : "BYDNIVDES_DIASEMANA_UK",
+		"column_name" : "DIA_SEMANA",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CHR_XML",
+		"constraint_name" : "CHRXML_PKAPOLLO_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CHR_XML",
+		"constraint_name" : "CHRXML_PKAPOLLO_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CHR_XML",
+		"constraint_name" : "CHRXML_PKAPOLLO_UK",
+		"column_name" : "NUMERO_NOTA_FISCAL",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CHR_XML",
+		"constraint_name" : "CHRXML_PKAPOLLO_UK",
+		"column_name" : "SERIE_NOTA_FISCAL",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CHR_XML",
+		"constraint_name" : "CHRXML_PKAPOLLO_UK",
+		"column_name" : "TIPO_TRANSACAO",
+		"key_ordinal" : 5
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CHR_XML",
+		"constraint_name" : "CHRXML_PKAPOLLO_UK",
+		"column_name" : "CONTADOR",
+		"key_ordinal" : 6
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CHR_XML",
+		"constraint_name" : "CHRXML_PKAPOLLO_UK",
+		"column_name" : "STATUS_NOTA",
+		"key_ordinal" : 7
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CTB_CONTA",
+		"constraint_name" : "CTBCONTA_REDUZIDO_IND_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CTB_CONTA",
+		"constraint_name" : "CTBCONTA_REDUZIDO_IND_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CTB_CONTA",
+		"constraint_name" : "CTBCONTA_REDUZIDO_IND_UK",
+		"column_name" : "REDUZIDO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CTB_CONTA_MS",
+		"constraint_name" : "CTBCONTAMS_REDUZIDO_IND_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CTB_CONTA_MS",
+		"constraint_name" : "CTBCONTAMS_REDUZIDO_IND_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CTB_CONTA_MS",
+		"constraint_name" : "CTBCONTAMS_REDUZIDO_IND_UK",
+		"column_name" : "REDUZIDO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_ATRIBUTOS",
+		"constraint_name" : "DPAATR_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_ATRIBUTOS",
+		"constraint_name" : "DPAATR_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_ATRIBUTOS",
+		"constraint_name" : "DPAATR_UK",
+		"column_name" : "CONTATO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_ATRIBUTOS",
+		"constraint_name" : "DPAATR_UK",
+		"column_name" : "ATRIBUTO",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_PARAMETRO",
+		"constraint_name" : "DPAPAR_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_PARAMETRO",
+		"constraint_name" : "DPAPAR_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_PEDIDO_BOLETO",
+		"constraint_name" : "DPAPEDBOL_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_PEDIDO_BOLETO",
+		"constraint_name" : "DPAPEDBOL_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_PEDIDO_BOLETO",
+		"constraint_name" : "DPAPEDBOL_UK",
+		"column_name" : "CONTATO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_PEDIDO_BOLETO",
+		"constraint_name" : "DPAPEDBOL_UK",
+		"column_name" : "CONDICAO",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_PEDIDO_BOLETO",
+		"constraint_name" : "DPAPEDBOL_UK",
+		"column_name" : "NRO_PARCELA",
+		"key_ordinal" : 5
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"constraint_name" : "DRECON_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"constraint_name" : "DRECON_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_LINHA",
+		"constraint_name" : "DRELIN_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_LINHA",
+		"constraint_name" : "DRELIN_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_LINHA",
+		"constraint_name" : "DRELIN_UK",
+		"column_name" : "NRO_LINHA",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_LINHA_ORIGEM_RATEIO",
+		"constraint_name" : "DRELINORIRAT_UK",
+		"column_name" : "ID_LINHA_TITULO_ORIGEM",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_LINHA_ORIGEM_RATEIO",
+		"constraint_name" : "DRELINORIRAT_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_LINHA_ORIGEM_RATEIO",
+		"constraint_name" : "DRELINORIRAT_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_LINHA_ORIGEM_RATEIO",
+		"constraint_name" : "DRELINORIRAT_UK",
+		"column_name" : "DEPARTAMENTO",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_LINHA_TITULO",
+		"constraint_name" : "DRELINTIT_UK",
+		"column_name" : "ID_LINHA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_LINHA_TITULO",
+		"constraint_name" : "DRELINTIT_UK",
+		"column_name" : "TIPO_TITULO",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_PREVISAO_RATEIO",
+		"constraint_name" : "DREPRERAT_UK",
+		"column_name" : "ID_PREVISAO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_PREVISAO_RATEIO",
+		"constraint_name" : "DREPRERAT_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_PREVISAO_RATEIO",
+		"constraint_name" : "DREPRERAT_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_PREVISAO_RATEIO",
+		"constraint_name" : "DREPRERAT_UK",
+		"column_name" : "DEPARTAMENTO",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "ECD_CONTA_MAPEAMENTO",
+		"constraint_name" : "ECDCONMAP_UK",
+		"column_name" : "COD_PLANO_CONSOLIDADO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "ECD_CONTA_MAPEAMENTO",
+		"constraint_name" : "ECDCONMAP_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "ECD_CONTA_MAPEAMENTO",
+		"constraint_name" : "ECDCONMAP_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "ECD_CONTA_MAPEAMENTO",
+		"constraint_name" : "ECDCONMAP_UK",
+		"column_name" : "CONTA_CTB",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PAGTO_QRLINX_ITEM",
+		"constraint_name" : "FATPAGQRLITE_UK",
+		"column_name" : "IDENTIFICADOR",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PESSOA_FISICA",
+		"constraint_name" : "FATPESFIS_CPF_UK",
+		"column_name" : "CPF",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PESSOA_FISICA",
+		"constraint_name" : "FATPESFIS_CPF_UK",
+		"column_name" : "CONTADOR",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PESSOA_JURIDICA",
+		"constraint_name" : "FATPESJUR_CGC_UK",
+		"column_name" : "CGC",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PESSOA_JURIDICA",
+		"constraint_name" : "FATPESJUR_CGC_UK",
+		"column_name" : "CONTADOR",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_REF_CST_ORIGEM",
+		"constraint_name" : "FATREFCSTORI_UK",
+		"column_name" : "ID_REFERENCIA_CST",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_REF_CST_ORIGEM",
+		"constraint_name" : "FATREFCSTORI_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_REF_CST_ORIGEM",
+		"constraint_name" : "FATREFCSTORI_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_REF_CST_ORIGEM",
+		"constraint_name" : "FATREFCSTORI_UK",
+		"column_name" : "ORIGEM",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VENDEDOR",
+		"constraint_name" : "FATVENDE_USUARIO_I_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VENDEDOR",
+		"constraint_name" : "FATVENDE_USUARIO_I_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VENDEDOR",
+		"constraint_name" : "FATVENDE_USUARIO_I_UK",
+		"column_name" : "USUARIO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VINCULO_DOC_ORIGEM",
+		"constraint_name" : "FATVINDOCORI_UK",
+		"column_name" : "ID_FAT_VINCULO_CAPA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VINCULO_DOC_ORIGEM",
+		"constraint_name" : "FATVINDOCORI_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VINCULO_DOC_ORIGEM",
+		"constraint_name" : "FATVINDOCORI_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VINCULO_DOC_ORIGEM",
+		"constraint_name" : "FATVINDOCORI_UK",
+		"column_name" : "CONTATO",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VINCULO_NOTA",
+		"constraint_name" : "FATVINNOT_UK",
+		"column_name" : "ID_FAT_VINCULO_CAPA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VINCULO_NOTA",
+		"constraint_name" : "FATVINNOT_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VINCULO_NOTA",
+		"constraint_name" : "FATVINNOT_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VINCULO_NOTA",
+		"constraint_name" : "FATVINNOT_UK",
+		"column_name" : "CONTATO",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_XMLNFE_RECEBIDO",
+		"constraint_name" : "FATNMLREC_SEQENA_UK",
+		"column_name" : "CHAVE_NFE",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIA_XML",
+		"constraint_name" : "FIAXML_PKAPOLLO_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIA_XML",
+		"constraint_name" : "FIAXML_PKAPOLLO_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIA_XML",
+		"constraint_name" : "FIAXML_PKAPOLLO_UK",
+		"column_name" : "NUMERO_NOTA_FISCAL",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIA_XML",
+		"constraint_name" : "FIAXML_PKAPOLLO_UK",
+		"column_name" : "SERIE_NOTA_FISCAL",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIA_XML",
+		"constraint_name" : "FIAXML_PKAPOLLO_UK",
+		"column_name" : "TIPO_TRANSACAO",
+		"key_ordinal" : 5
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIA_XML",
+		"constraint_name" : "FIAXML_PKAPOLLO_UK",
+		"column_name" : "CONTADOR",
+		"key_ordinal" : 6
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIA_XML",
+		"constraint_name" : "FIAXML_PKAPOLLO_UK",
+		"column_name" : "STATUS_NOTA",
+		"key_ordinal" : 7
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_BOLETO_STONE",
+		"constraint_name" : "FINBOLSTO_IDBOLSTO_UK",
+		"column_name" : "ID_BOLETO_STONE",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PAGAMENTO_STONE",
+		"constraint_name" : "FINPAGSTO_IDPAGSTO_UK",
+		"column_name" : "ID_PAGAMENTO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO_RATEIO_CC",
+		"constraint_name" : "FINTITRATCC_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO_RATEIO_CC",
+		"constraint_name" : "FINTITRATCC_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO_RATEIO_CC",
+		"constraint_name" : "FINTITRATCC_UK",
+		"column_name" : "TITULO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO_RATEIO_CC",
+		"constraint_name" : "FINTITRATCC_UK",
+		"column_name" : "DUPLICATA",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO_RATEIO_CC",
+		"constraint_name" : "FINTITRATCC_UK",
+		"column_name" : "CLIENTE",
+		"key_ordinal" : 5
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO_RATEIO_CC",
+		"constraint_name" : "FINTITRATCC_UK",
+		"column_name" : "TIPO",
+		"key_ordinal" : 6
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO_RATEIO_CC",
+		"constraint_name" : "FINTITRATCC_UK",
+		"column_name" : "CENTRO_CUSTO",
+		"key_ordinal" : 7
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_FAMILIA",
+		"constraint_name" : "FRAFAM_UK",
+		"column_name" : "FAMILIA_ID",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_GRUPO",
+		"constraint_name" : "FRAGRU_UK",
+		"column_name" : "GRUPO_ID",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_ITEM_ESTOQUE",
+		"constraint_name" : "FRAITEEST_IDFRAPRO_UK",
+		"column_name" : "ID_FRA_PRODUTO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_ITEM_ESTOQUE",
+		"constraint_name" : "FRAITEEST_IDFRAPRO_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_ITEM_ESTOQUE",
+		"constraint_name" : "FRAITEEST_ITEEST_UK",
+		"column_name" : "ITEM_ESTOQUE",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_ITEM_ESTOQUE",
+		"constraint_name" : "FRAITEEST_ITEEST_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_MARCA",
+		"constraint_name" : "FRAMAR_UK",
+		"column_name" : "MARCA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_PARAMETRO",
+		"constraint_name" : "FRAPAR_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_PARAMETRO",
+		"constraint_name" : "FRAPAR_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_PRODUTO",
+		"constraint_name" : "PARNUM_UK",
+		"column_name" : "PARTNUMBER",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_PRODUTO",
+		"constraint_name" : "PARNUM_UK",
+		"column_name" : "ID_FRA_MARCA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_SISTEMA",
+		"constraint_name" : "FRASIS_UK",
+		"column_name" : "SISTEMA_ID",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_GRUPO",
+		"constraint_name" : "GERGRUPO_DESCRICAO_I_UK",
+		"column_name" : "DES_GRUPO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_LICENSE_SERVER",
+		"constraint_name" : "GERLICSER_CNPJ_UK",
+		"column_name" : "CNPJ",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_LOG_CONFIGURACAO",
+		"constraint_name" : "GERLOGCON_TABTIP_UK",
+		"column_name" : "TABELA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_LOG_CONFIGURACAO",
+		"constraint_name" : "GERLOGCON_TABTIP_UK",
+		"column_name" : "TIPO",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_NFSE_COMPLEMENTOS",
+		"constraint_name" : "GERNFSCOM_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_NFSE_COMPLEMENTOS",
+		"constraint_name" : "GERNFSCOM_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_NFSE_COMPLEMENTOS",
+		"constraint_name" : "GERNFSCOM_UK",
+		"column_name" : "COMPLEMENTO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_NFSE_PARAMETRO",
+		"constraint_name" : "GERNFSPAR_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_NFSE_PARAMETRO",
+		"constraint_name" : "GERNFSPAR_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_PARAM_CORINGA",
+		"constraint_name" : "GERPARCOR_UK",
+		"column_name" : "NIVEL",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_PARAM_CORINGA",
+		"constraint_name" : "GERPARCOR_UK",
+		"column_name" : "PARAMETRO",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_PARAM_CORINGA",
+		"constraint_name" : "GERPARCOR_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_PARAM_CORINGA",
+		"constraint_name" : "GERPARCOR_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_POSICAO_VENDAS",
+		"constraint_name" : "GERPOSVEN_ANOMES_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_POSICAO_VENDAS",
+		"constraint_name" : "GERPOSVEN_ANOMES_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_POSICAO_VENDAS",
+		"constraint_name" : "GERPOSVEN_ANOMES_UK",
+		"column_name" : "ANO_MES",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REDUTOR_GOV",
+		"constraint_name" : "GERREDGOV_TPDT_UK",
+		"column_name" : "TP_ENTE_GOV",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REDUTOR_GOV",
+		"constraint_name" : "GERREDGOV_TPDT_UK",
+		"column_name" : "DT_INICIO_VIG",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_TABELAS",
+		"constraint_name" : "GERTAB_IDPROCESSO_UK",
+		"column_name" : "PROCESSO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_TABELAS",
+		"constraint_name" : "GERTAB_IDPROCESSO_UK",
+		"column_name" : "ID_PROCESSO",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_USUARIO",
+		"constraint_name" : "GERUSUARIO_LOGIN_I_UK",
+		"column_name" : "LOGIN",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "ICA_PLANO_REVENDA",
+		"constraint_name" : "ICAPLAREV_DEANOVOUSADO_UK",
+		"column_name" : "ID_DEALER",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "ICA_PLANO_REVENDA",
+		"constraint_name" : "ICAPLAREV_DEANOVOUSADO_UK",
+		"column_name" : "NOVO_USADO",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "ILS_GATILHO",
+		"constraint_name" : "ILSGAT_NOMBAN_UK",
+		"column_name" : "NOME",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "ILS_GATILHO",
+		"constraint_name" : "ILSGAT_NOMBAN_UK",
+		"column_name" : "BANCO",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MAS_XML",
+		"constraint_name" : "MASXML_PKAPOLLO_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MAS_XML",
+		"constraint_name" : "MASXML_PKAPOLLO_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MAS_XML",
+		"constraint_name" : "MASXML_PKAPOLLO_UK",
+		"column_name" : "NUMERO_NOTA_FISCAL",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MAS_XML",
+		"constraint_name" : "MASXML_PKAPOLLO_UK",
+		"column_name" : "SERIE_NOTA_FISCAL",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MAS_XML",
+		"constraint_name" : "MASXML_PKAPOLLO_UK",
+		"column_name" : "TIPO_TRANSACAO",
+		"key_ordinal" : 5
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MAS_XML",
+		"constraint_name" : "MASXML_PKAPOLLO_UK",
+		"column_name" : "CONTADOR",
+		"key_ordinal" : 6
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MOB_DISPOSITIVOS",
+		"constraint_name" : "MOBDIS_IDDISPOSITIVO_UK",
+		"column_name" : "ID_DISPOSITIVO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_DI_INTEGRACAO_TIPO",
+		"constraint_name" : "NISDIINTTIPORD_UK",
+		"column_name" : "ORDEM_EXECUCAO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_DI_PARAMETRO_INTEGRACAO",
+		"constraint_name" : "NISDIPARINT_UK",
+		"column_name" : "ID",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_DI_RESUMO_RETORNO_TIPO",
+		"constraint_name" : "NISDIRESRETTIP_UK",
+		"column_name" : "CODIGO_RETORNO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CICLO_MODELO",
+		"constraint_name" : "OFICICMOD_MODELO_UK",
+		"column_name" : "MARCA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CICLO_MODELO",
+		"constraint_name" : "OFICICMOD_MODELO_UK",
+		"column_name" : "MODELO",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CICLO_MODELO_ANO",
+		"constraint_name" : "OFICICMODANO_ANOFIM_UK",
+		"column_name" : "ID_CICLO_MODELO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CICLO_MODELO_ANO",
+		"constraint_name" : "OFICICMODANO_ANOFIM_UK",
+		"column_name" : "ANO_FIM",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CICLO_MODELO_ANO",
+		"constraint_name" : "OFICICMODANO_ANOINI_UK",
+		"column_name" : "ID_CICLO_MODELO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CICLO_MODELO_ANO",
+		"constraint_name" : "OFICICMODANO_ANOINI_UK",
+		"column_name" : "ANO_INI",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CICLO_TAB_PERIODICOS_ITENS",
+		"constraint_name" : "OFICICTABPERITE_REVISAO_UK",
+		"column_name" : "ID_CICLO_TAB_PERIODICO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CICLO_TAB_PERIODICOS_ITENS",
+		"constraint_name" : "OFICICTABPERITE_REVISAO_UK",
+		"column_name" : "KM",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CICLO_TAB_PERIODICOS_ITENS",
+		"constraint_name" : "OFICICTABPERITE_REVISAO_UK",
+		"column_name" : "GRUPO_MANUTENCAO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CICLO_TAB_PERIODICOS_ITENS",
+		"constraint_name" : "OFICICTABPERITE_TIPOREV_UK",
+		"column_name" : "ID_CICLO_TAB_PERIODICO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CICLO_TAB_PERIODICOS_ITENS",
+		"constraint_name" : "OFICICTABPERITE_TIPOREV_UK",
+		"column_name" : "TIPO_REVISAO_SERVICO",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CICLO_TAB_PERIODICOS_ITENS",
+		"constraint_name" : "OFICICTABPERITE_TIPOREV_UK",
+		"column_name" : "GRUPO_MANUTENCAO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_RATEIO_SERVICO_MECANICO",
+		"constraint_name" : "OFIRATSERMEC_SOLMEC_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_RATEIO_SERVICO_MECANICO",
+		"constraint_name" : "OFIRATSERMEC_SOLMEC_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_RATEIO_SERVICO_MECANICO",
+		"constraint_name" : "OFIRATSERMEC_SOLMEC_UK",
+		"column_name" : "CONTATO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_RATEIO_SERVICO_MECANICO",
+		"constraint_name" : "OFIRATSERMEC_SOLMEC_UK",
+		"column_name" : "NRO_SOLICITACAO",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_RATEIO_SERVICO_MECANICO",
+		"constraint_name" : "OFIRATSERMEC_SOLMEC_UK",
+		"column_name" : "NRO_LANCAMENTO",
+		"key_ordinal" : 5
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_RATEIO_SERVICO_MECANICO",
+		"constraint_name" : "OFIRATSERMEC_SOLMEC_UK",
+		"column_name" : "MECANICO",
+		"key_ordinal" : 6
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_CATEGORIA_PEDIDO",
+		"constraint_name" : "PECCATPED_DESC_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_CATEGORIA_PEDIDO",
+		"constraint_name" : "PECCATPED_DESC_UK",
+		"column_name" : "DES_CATEGORIA_PEDIDO",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_GRUPOS_INTEGRADOS",
+		"constraint_name" : "PECGRUINT_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_GRUPOS_INTEGRADOS",
+		"constraint_name" : "PECGRUINT_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_GRUPOS_INTEGRADOS",
+		"constraint_name" : "PECGRUINT_UK",
+		"column_name" : "INTEGRACAO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_GRUPOS_INTEGRADOS",
+		"constraint_name" : "PECGRUINT_UK",
+		"column_name" : "GRUPO",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES",
+		"constraint_name" : "PECINT_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES",
+		"constraint_name" : "PECINT_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES",
+		"constraint_name" : "PECINT_UK",
+		"column_name" : "INTEGRACAO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES_ML",
+		"constraint_name" : "PECINTML_IDINT_UK",
+		"column_name" : "ID_INTEGRACAO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES_PLUGGTO",
+		"constraint_name" : "PECINTPLU_IDINT_UK",
+		"column_name" : "ID_INTEGRACAO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES_SFTP",
+		"constraint_name" : "PECINTSFT_IDINT_UK",
+		"column_name" : "ID_INTEGRACAO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_ESTOQUE",
+		"constraint_name" : "PECITEMEST_CODFABRICANTE_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_ESTOQUE",
+		"constraint_name" : "PECITEMEST_CODFABRICANTE_UK",
+		"column_name" : "ITEM_ESTOQUE_PUB",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_ESTOQUE_CAT_ADIC",
+		"constraint_name" : "PECITEESTCATADI_UK",
+		"column_name" : "ITEM_ESTOQUE",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_ESTOQUE_CAT_ADIC",
+		"constraint_name" : "PECITEESTCATADI_UK",
+		"column_name" : "ID",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_ESTOQUE_CAT_ADIC",
+		"constraint_name" : "PECITEESTCATADI_UK",
+		"column_name" : "NAME",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_ESTOQUE_CAT_ADIC",
+		"constraint_name" : "PECITEESTCATADI_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITENS_INTEGRADOS",
+		"constraint_name" : "PECITEINT_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITENS_INTEGRADOS",
+		"constraint_name" : "PECITEINT_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITENS_INTEGRADOS",
+		"constraint_name" : "PECITEINT_UK",
+		"column_name" : "INTEGRACAO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITENS_INTEGRADOS",
+		"constraint_name" : "PECITEINT_UK",
+		"column_name" : "ITEM_ESTOQUE",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_KITS_INTEGRADOS",
+		"constraint_name" : "PECKITINT_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_KITS_INTEGRADOS",
+		"constraint_name" : "PECKITINT_UK",
+		"column_name" : "INTEGRACAO",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_KITS_INTEGRADOS",
+		"constraint_name" : "PECKITINT_UK",
+		"column_name" : "KIT",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_MASTER_ITEM_ESTOQUE",
+		"constraint_name" : "PECMASITEEST_ITEESTPUB_UK",
+		"column_name" : "ITEM_ESTOQUE_PUB",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_MASTER_ITEM_REVENDA",
+		"constraint_name" : "PECMASITEREV_ITEESTPUB_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_MASTER_ITEM_REVENDA",
+		"constraint_name" : "PECMASITEREV_ITEESTPUB_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_MASTER_ITEM_REVENDA",
+		"constraint_name" : "PECMASITEREV_ITEESTPUB_UK",
+		"column_name" : "ID_PEC_MASTER_ITEM_ESTOQUE",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_TRANSF_SIMPLIFICADA",
+		"constraint_name" : "PECTRASIM_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_TRANSF_SIMPLIFICADA",
+		"constraint_name" : "PECTRASIM_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_TRANSF_SIMPLIFICADA",
+		"constraint_name" : "PECTRASIM_UK",
+		"column_name" : "ORDEM",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CAD_ASSISTANCE",
+		"constraint_name" : "SCACADASS_EMPREVIDCLI_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CAD_ASSISTANCE",
+		"constraint_name" : "SCACADASS_EMPREVIDCLI_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CAD_ASSISTANCE",
+		"constraint_name" : "SCACADASS_EMPREVIDCLI_UK",
+		"column_name" : "ID_CLIENTE",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CAD_CONJUNTO_GARANTIA",
+		"constraint_name" : "SCACADCONGAR_CODFAB_CODCGA_UK",
+		"column_name" : "COD_FABRICANTE",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CAD_CONJUNTO_GARANTIA",
+		"constraint_name" : "SCACADCONGAR_CODFAB_CODCGA_UK",
+		"column_name" : "COD_CGARANTIA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CAD_FALHAS",
+		"constraint_name" : "SCACADFAL_CODFAL_UK",
+		"column_name" : "COD_FALHA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CAD_GRUPO_DEFEITO",
+		"constraint_name" : "SCACADGRUDEF_CODGRUDEF_UK",
+		"column_name" : "COD_GRUPO_DEFEITO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CAD_MANUTENCAO_FLEXIBLE",
+		"constraint_name" : "SCACADMANFLE_CODMAN_UK",
+		"column_name" : "COD_MANUTENCAO",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CAD_SITUACAO_RR",
+		"constraint_name" : "SCACADSITRR_CODSITRR_UK",
+		"column_name" : "COD_SITUACAO_RR",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CAD_SKILLCODE",
+		"constraint_name" : "SCACADSKI_CODSKI_UK",
+		"column_name" : "COD_SKILLCODE",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CAD_TIPO_CAMPANHA",
+		"constraint_name" : "SCACADTIPCAM_CODTIPCAM_UK",
+		"column_name" : "COD_TIPO_CAMPANHA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CAD_TIPO_GARANTIA",
+		"constraint_name" : "SCACADTIPGAR_CODTIPGAR_UK",
+		"column_name" : "COD_TIPO_GARANTIA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CHECKLIST_BASE",
+		"constraint_name" : "SCACHEBAS_EMPREVNRO_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CHECKLIST_BASE",
+		"constraint_name" : "SCACHEBAS_EMPREVNRO_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CHECKLIST_BASE",
+		"constraint_name" : "SCACHEBAS_EMPREVNRO_UK",
+		"column_name" : "NRO_OS",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CHECKLIST_ITENS",
+		"constraint_name" : "SCACHEITE_IDENTIFICACAO_UK",
+		"column_name" : "ID_CHECK_BASE",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CHECKLIST_ITENS",
+		"constraint_name" : "SCACHEITE_IDENTIFICACAO_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CHECKLIST_ITENS",
+		"constraint_name" : "SCACHEITE_IDENTIFICACAO_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CHECKLIST_ITENS",
+		"constraint_name" : "SCACHEITE_IDENTIFICACAO_UK",
+		"column_name" : "LISTA_VERIFICACAO",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CHECKLIST_ITENS",
+		"constraint_name" : "SCACHEITE_IDENTIFICACAO_UK",
+		"column_name" : "ORDEM",
+		"key_ordinal" : 5
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_CHECKLIST_ITENS",
+		"constraint_name" : "SCACHEITE_IDENTIFICACAO_UK",
+		"column_name" : "CHECKLIST",
+		"key_ordinal" : 6
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_DADOS_GARANTIA",
+		"constraint_name" : "SCADADGAR_ID_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_DADOS_GARANTIA",
+		"constraint_name" : "SCADADGAR_ID_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_DADOS_GARANTIA",
+		"constraint_name" : "SCADADGAR_ID_UK",
+		"column_name" : "NRO_OS",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_DADOS_GARANTIA",
+		"constraint_name" : "SCADADGAR_ID_UK",
+		"column_name" : "NRO_RR",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_DADOS_GARANTIA_ATUALIZACAO",
+		"constraint_name" : "SCADADGARATU_ID_UK",
+		"column_name" : "ID_GARANTIA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_DADOS_GARANTIA_ATUALIZACAO",
+		"constraint_name" : "SCADADGARATU_ID_UK",
+		"column_name" : "SEQUENCIA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_DADOS_GARANTIA_PRODUTOS",
+		"constraint_name" : "SCADADGARPRO_ID_UK",
+		"column_name" : "ID_GARANTIA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_DADOS_GARANTIA_PRODUTOS",
+		"constraint_name" : "SCADADGARPRO_ID_UK",
+		"column_name" : "SEQUENCIA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_DADOS_GARANTIA_PRODUTOS",
+		"constraint_name" : "SCADADGARPRO_ID_UK",
+		"column_name" : "TIPO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_DADOS_GARANTIA_RECLAMACAO",
+		"constraint_name" : "SCADADGARREC_ID_UK",
+		"column_name" : "ID_GARANTIA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_DADOS_GARANTIA_RECLAMACAO2",
+		"constraint_name" : "SCADADGARREC2_ID_UK",
+		"column_name" : "ID_GARANTIA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_NATUREZA_GARANTIA",
+		"constraint_name" : "SCANATGAR_CODNATGAR_UK",
+		"column_name" : "COD_NATUREZA_GARANTIA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_OFI_ATENDIMENTO",
+		"constraint_name" : "SCAOFIATE_ATEND_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_OFI_ATENDIMENTO",
+		"constraint_name" : "SCAOFIATE_ATEND_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_OFI_ATENDIMENTO",
+		"constraint_name" : "SCAOFIATE_ATEND_UK",
+		"column_name" : "CONTATO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_OFI_ATENDIMENTO",
+		"constraint_name" : "SCAOFIATE_WORKORDERID_UK",
+		"column_name" : "WORKORDER_ID",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_ORDEM_SERVICO_DETALHE",
+		"constraint_name" : "SCAORDSERDET_DET_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_ORDEM_SERVICO_DETALHE",
+		"constraint_name" : "SCAORDSERDET_DET_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_ORDEM_SERVICO_DETALHE",
+		"constraint_name" : "SCAORDSERDET_DET_UK",
+		"column_name" : "CONTATO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_ORDEM_SERVICO_DETALHE",
+		"constraint_name" : "SCAORDSERDET_DET_UK",
+		"column_name" : "NRO_OS",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "sysdiagrams",
+		"constraint_name" : "UK_principal_name",
+		"column_name" : "principal_id",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "sysdiagrams",
+		"constraint_name" : "UK_principal_name",
+		"column_name" : "name",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MAPEAMENTO_FRETE",
+		"constraint_name" : "VEIMAPFRE_UK",
+		"column_name" : "ID_ROTA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MAPEAMENTO_FRETE",
+		"constraint_name" : "VEIMAPFRE_UK",
+		"column_name" : "ID_TRANSPORTADORA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MAPEAMENTO_FRETE",
+		"constraint_name" : "VEIMAPFRE_UK",
+		"column_name" : "QTD_VEICULOS",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_ROTA",
+		"constraint_name" : "VEIROT_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_ROTA",
+		"constraint_name" : "VEIROT_UK",
+		"column_name" : "REVENDA_ORIGEM",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_ROTA",
+		"constraint_name" : "VEIROT_UK",
+		"column_name" : "REVENDA_DESTINO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "WOM_BOSCH_CESTAS",
+		"constraint_name" : "WOMBOSCES_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "WOM_BOSCH_CESTAS",
+		"constraint_name" : "WOMBOSCES_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "WOM_BOSCH_CESTAS",
+		"constraint_name" : "WOMBOSCES_UK",
+		"column_name" : "CONTATO",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "WOM_PARAMETRO",
+		"constraint_name" : "WOMPAR_EMPRESA_REVENDA_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "WOM_PARAMETRO",
+		"constraint_name" : "WOMPAR_EMPRESA_REVENDA_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "YAM_XML",
+		"constraint_name" : "YAMXML_PKAPOLLO_UK",
+		"column_name" : "EMPRESA",
+		"key_ordinal" : 1
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "YAM_XML",
+		"constraint_name" : "YAMXML_PKAPOLLO_UK",
+		"column_name" : "REVENDA",
+		"key_ordinal" : 2
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "YAM_XML",
+		"constraint_name" : "YAMXML_PKAPOLLO_UK",
+		"column_name" : "NUMERO_NOTA_FISCAL",
+		"key_ordinal" : 3
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "YAM_XML",
+		"constraint_name" : "YAMXML_PKAPOLLO_UK",
+		"column_name" : "SERIE_NOTA_FISCAL",
+		"key_ordinal" : 4
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "YAM_XML",
+		"constraint_name" : "YAMXML_PKAPOLLO_UK",
+		"column_name" : "TIPO_TRANSACAO",
+		"key_ordinal" : 5
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "YAM_XML",
+		"constraint_name" : "YAMXML_PKAPOLLO_UK",
+		"column_name" : "CONTADOR",
+		"key_ordinal" : 6
+	}
+]}

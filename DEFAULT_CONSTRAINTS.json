@@ -1,0 +1,6793 @@
+{
+"DEFAULT_CONSTRAINTS": [
+	{
+		"schema_name" : "dbo",
+		"table_name" : "AFX_CONTA_PATRIMONIAL",
+		"column_name" : "IDENTIF_BEM_IMOBIL_SPED",
+		"constraint_name" : "DF__AFX_CONTA__IDENT__78C20A1E",
+		"definition" : "('99')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "AFX_PARAMETRO",
+		"column_name" : "PISCOFINS_PERGUNTAR_ANTES",
+		"constraint_name" : "DF__AFX_PARAM__PISCO__0EC58E7F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "AFX_PARAMETRO",
+		"column_name" : "LANCAR_CONTABILIDADE_POR_BEM",
+		"constraint_name" : "DF__AFX_PARAM__LANCA__5B50D771",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "AFX_PARAMETRO",
+		"column_name" : "NAO_CALCULAR_CIAP_BAIXA",
+		"constraint_name" : "DF__AFX_PARAM__NAO_C__7E650984",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "AFX_PARAMETRO",
+		"column_name" : "NAO_CALCULAR_DEPR_BAIXA",
+		"constraint_name" : "DF__AFX_PARAM__NAO_C__489308B8",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "AFX_PARAMETRO",
+		"column_name" : "INTEGRACAO_LINXDMS",
+		"constraint_name" : "DF__AFX_PARAM__INTEG__127AE7DC",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "AGC_ORDER_CREATION",
+		"column_name" : "DATA_CRIACAO",
+		"constraint_name" : "DF__AGC_ORDER__DATA___4333F927",
+		"definition" : "(getdate())"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "BYD_ACTIVITY",
+		"column_name" : "DATA_INCLUSAO",
+		"constraint_name" : "DF__BYD_ACTIV__DATA___5DFCFDFC",
+		"definition" : "(getdate())"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "BYD_AGENDAMENTO",
+		"column_name" : "AGENDA_BYD",
+		"constraint_name" : "DF__BYD_AGEND__AGEND__0007FD3D",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "BYD_AGENDAMENTO",
+		"column_name" : "DATA_GRAVACAO_REGISTRO",
+		"constraint_name" : "DF__BYD_AGEND__DATA___00FC2176",
+		"definition" : "(getdate())"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "BYD_PARAMETROS",
+		"column_name" : "API_INTEGRACAO_PARTS_ATIVA",
+		"constraint_name" : "DF__BYD_PARAM__API_I__0B04AE9D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "BYD_PARAMETROS",
+		"column_name" : "ATIVA_TRIGGER_PARTS_STOCK",
+		"constraint_name" : "DF__BYD_PARAM__ATIVA__0BF8D2D6",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "BYD_PARAMETROS",
+		"column_name" : "INTEGRACAO_REPAIR_ORDER_ATIVA",
+		"constraint_name" : "DF__BYD_PARAM__INTEG__5EF12235",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "BYD_PARAMETROS",
+		"column_name" : "ENCRYPT_REPAIR_ORDER",
+		"constraint_name" : "DF__BYD_PARAM__ENCRY__5FE5466E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "BYD_PARAMETROS",
+		"column_name" : "ATU_DESC_ITEM_REPAIR_ORDER",
+		"constraint_name" : "DF__BYD_PARAM__ATU_D__1B060C3C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_AGENDA_PESQUISA",
+		"column_name" : "GERAR_CONTATO_PROSPECT",
+		"constraint_name" : "DF__CAC_AGEND__GERAR__175AD480",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_CAA_SCRIPT",
+		"column_name" : "SCRIPT_QUESTIONARIO",
+		"constraint_name" : "DF__CAC_CAA_S__SCRIP__149441C5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_CONTATO",
+		"column_name" : "LEMBRAR",
+		"constraint_name" : "DF__CAC_CONTA__LEMBR__7B5B524B",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_CONTATO_TESTDRIVE",
+		"column_name" : "VERIFICADOR",
+		"constraint_name" : "DF__CAC_CONTA__VERIF__59DCC4F4",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_LEAD_CONTATO",
+		"column_name" : "INTEGRANDO",
+		"constraint_name" : "DF__CAC_LEAD___INTEG__2D150B75",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "MOSTRA_REVISOES_ABERTURA_OS",
+		"constraint_name" : "DF__CAC_PARAM__MOSTR__56E8E7AB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "AVISA_VENDEDOR_CLI_OFI",
+		"constraint_name" : "DF__CAC_PARAM__AVISA__5D95E53A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "UTILIZA_OFFICE_365",
+		"constraint_name" : "DF__CAC_PARAM__UTILI__6166761E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "UTILIZA_SMS_INTERATIVO_AGENDA",
+		"constraint_name" : "DF__CAC_PARAM__UTILI__65370702",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "RESGATE_PROPOSTA_ABERTA",
+		"constraint_name" : "DF__CAC_PARAM__RESGA__671F4F74",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "ABERTURA_PROPOSTA",
+		"constraint_name" : "DF__CAC_PARAM__ABERT__681373AD",
+		"definition" : "('P')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "ENVIA_CONTATO_VEND_BLOQ",
+		"constraint_name" : "DF__CAC_PARAM__ENVIA__6AEFE058",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "RESGATE_TIPO_CONTAGEM",
+		"constraint_name" : "DF__CAC_PARAM__RESGA__5BC50D66",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "RESGATE_NAODEVOLVER_SEM_PROV",
+		"constraint_name" : "DF__CAC_PARAM__RESGA__5CB9319F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "OBRIGA_MOTIVO_NAOVENDA",
+		"constraint_name" : "DF__CAC_PARAM__OBRIG__5DAD55D8",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "ENVIAR_RESGATE_GERENTE",
+		"constraint_name" : "DF__CAC_PARAM__ENVIA__17A4ED43",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "ENVIAR_RESGATE_MESMO_DEPTO",
+		"constraint_name" : "DF__CAC_PARAM__ENVIA__1899117C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "RESGATE_AUTOMATICO_SERVICO",
+		"constraint_name" : "DF__CAC_PARAM__RESGA__5BE508F7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "INTEGRACAO_CT_PROGRAMAS_EXT",
+		"constraint_name" : "DF__CAC_PARAM__INTEG__0C533628",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "UTILIZA_INTEGRACAO_LEADVW",
+		"constraint_name" : "DF__CAC_PARAM__UTILI__0D475A61",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "OBRIGA_CPF_CLI_SIMPLIFICADO",
+		"constraint_name" : "DF__CAC_PARAM__OBRIG__379299E8",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "UTILIZA_DTA_BASE_VENDEDOR",
+		"constraint_name" : "DF__CAC_PARAM__UTILI__36696B85",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "CONTABILIZA_CONTATOS_TEL",
+		"constraint_name" : "DF__CAC_PARAM__CONTA__28DA663D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "RESGATE_AUTOMATICO",
+		"constraint_name" : "DF__CAC_PARAM__RESGA__60158C8E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "CRIAR_PROVIDENCIA_EMAIL",
+		"constraint_name" : "DF__CAC_PARAM__CRIAR__13A01D8C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PARAMETRO",
+		"column_name" : "INICIATIVA_CONTATO_RECEPTIVO",
+		"constraint_name" : "DF__CAC_PARAM__INICI__0D5DFFA8",
+		"definition" : "('P')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PROVIDENCIA",
+		"column_name" : "POSSIBILIDADE_FECHAR",
+		"constraint_name" : "DF__CAC_PROVI__POSSI__1C873BEC",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PROVIDENCIA",
+		"column_name" : "AGENDA_TIPO_PROV",
+		"constraint_name" : "DF__CAC_PROVI__AGEND__2704CA5F",
+		"definition" : "('M')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CAC_PROVIDENCIA",
+		"column_name" : "ENVIO_MBB",
+		"constraint_name" : "DF__CAC_PROVI__ENVIO__0FBE76C2",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CHR_PARAMETROS",
+		"column_name" : "UTILIZA_SALES_FORCE",
+		"constraint_name" : "DF__CHR_PARAM__UTILI__640DD89F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CHR_TMO_TMP",
+		"column_name" : "IS_PROCESSED_SRV",
+		"constraint_name" : "DF__CHR_TMO_T__IS_PR__0FC963BA",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CHR_TMO_TMP",
+		"column_name" : "IS_PROCESSED_MO",
+		"constraint_name" : "DF__CHR_TMO_T__IS_PR__10BD87F3",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CIT_PARAMETRO",
+		"column_name" : "UTILIZA_SPEEDER",
+		"constraint_name" : "DF__CIT_PARAM__UTILI__038683F8",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CTB_ANO_CONTA_REF",
+		"column_name" : "TIPO_ITEM",
+		"constraint_name" : "DF__CTB_ANO_C__TIPO___51BA1E3A",
+		"definition" : "('Z')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CTB_CONTA_AGLUTINADORA",
+		"column_name" : "EMPRESA",
+		"constraint_name" : "DF__CTB_CONTA__EMPRE__456D4EA1",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CTB_CONTA_AGLUTINADORA_FORM",
+		"column_name" : "EMPRESA",
+		"constraint_name" : "DF__CTB_CONTA__EMPRE__466172DA",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CTB_CONTA_CUSTO_ECF",
+		"column_name" : "TIPO_SALDO",
+		"constraint_name" : "DF__CTB_CONTA__TIPO___15974BA9",
+		"definition" : "('F')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CTB_CONTA_MS",
+		"column_name" : "COSIF",
+		"constraint_name" : "DF__CTB_CONTA__COSIF__66B53B20",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CTB_CONTA_MS",
+		"column_name" : "RELATORIOS",
+		"constraint_name" : "DF__CTB_CONTA__RELAT__6A85CC04",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CUM_PARAMETRO",
+		"column_name" : "QTD_CONTROLE_SALDO_ITENS",
+		"constraint_name" : "DF__CUM_PARAM__QTD_C__34E8D562",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CUM_PARAMETRO",
+		"column_name" : "ROMANEIO_OBRIGATORIO_CUMPAS",
+		"constraint_name" : "DF__CUM_PARAM__ROMAN__714E32E4",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CUM_PARAMETRO",
+		"column_name" : "NF_ARQUIVO_UNICO_CUMPAS",
+		"constraint_name" : "DF__CUM_PARAM__NF_AR__7242571D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CUM_PARAMETRO",
+		"column_name" : "APROVACAO_PEDIDO_CUMPAS",
+		"constraint_name" : "DF__CUM_PARAM__APROV__73367B56",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "CUM_PARAMETRO",
+		"column_name" : "QTD_CTRL_SALDO_ITENS_CUMPAS",
+		"constraint_name" : "DF__CUM_PARAM__QTD_C__742A9F8F",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_PARAMETRO",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__DPA_PARAM__ATIVO__7C61898B",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_PARAMETRO",
+		"column_name" : "TIPO_LOJA",
+		"constraint_name" : "DF__DPA_PARAM__TIPO___7D55ADC4",
+		"definition" : "('L')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_PARAMETRO",
+		"column_name" : "AMBIENTE_BARRAMENTO",
+		"constraint_name" : "DF__DPA_PARAM__AMBIE__30012922",
+		"definition" : "('H')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_PARAMETRO",
+		"column_name" : "INTEGRACAO_BARRAMENTO_ATIVA",
+		"constraint_name" : "DF__DPA_PARAM__INTEG__30F54D5B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DPA_PARAMETRO",
+		"column_name" : "GRAVA_LOG_INFORMACAO",
+		"constraint_name" : "DF__DPA_PARAM__GRAVA__3E1A3E4F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CR_ISS",
+		"constraint_name" : "DF__DRE_CONFI__CR_IS__62ACA480",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CR_IR",
+		"constraint_name" : "DF__DRE_CONFI__CR_IR__63A0C8B9",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CR_OUTRAS_DESP",
+		"constraint_name" : "DF__DRE_CONFI__CR_OU__6494ECF2",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CR_DESP_CARTORIO",
+		"constraint_name" : "DF__DRE_CONFI__CR_DE__6589112B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CR_CONTRIB_RETIDA",
+		"constraint_name" : "DF__DRE_CONFI__CR_CO__667D3564",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CR_ACRESCIMO",
+		"constraint_name" : "DF__DRE_CONFI__CR_AC__6771599D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CR_DESCONTO",
+		"constraint_name" : "DF__DRE_CONFI__CR_DE__68657DD6",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CP_OUTRAS_DESP",
+		"constraint_name" : "DF__DRE_CONFI__CP_OU__6959A20F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CP_ACRESCIMO",
+		"constraint_name" : "DF__DRE_CONFI__CP_AC__6A4DC648",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CP_DESCONTO",
+		"constraint_name" : "DF__DRE_CONFI__CP_DE__6B41EA81",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "AD_MULTA",
+		"constraint_name" : "DF__DRE_CONFI__AD_MU__6C360EBA",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "AD_ACRESCIMO",
+		"constraint_name" : "DF__DRE_CONFI__AD_AC__6D2A32F3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "AD_DESCONTO",
+		"constraint_name" : "DF__DRE_CONFI__AD_DE__6E1E572C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CT_MULTA",
+		"constraint_name" : "DF__DRE_CONFI__CT_MU__6F127B65",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CT_ACRESCIMO",
+		"constraint_name" : "DF__DRE_CONFI__CT_AC__70069F9E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CT_DESCONTO",
+		"constraint_name" : "DF__DRE_CONFI__CT_DE__70FAC3D7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CT_TAXA",
+		"constraint_name" : "DF__DRE_CONFI__CT_TA__71EEE810",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CH_MULTA",
+		"constraint_name" : "DF__DRE_CONFI__CH_MU__72E30C49",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CH_ACRESCIMO",
+		"constraint_name" : "DF__DRE_CONFI__CH_AC__73D73082",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "DRE_CONFIGURACAO",
+		"column_name" : "CH_DESCONTO",
+		"constraint_name" : "DF__DRE_CONFI__CH_DE__74CB54BB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "ECD_CONTA_CONSOLIDADO",
+		"column_name" : "CONSIDERA_ELIMINACAO",
+		"constraint_name" : "DF__ECD_CONTA__CONSI__15C23432",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CATEGORIA_CLIENTE",
+		"column_name" : "CATEGORIA_GUDB",
+		"constraint_name" : "DF__FAT_CATEG__CATEG__3D166914",
+		"definition" : "('U')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CATEGORIA_CLIENTE",
+		"column_name" : "OBRIGA_SINISTRO_DADOS_ADIC",
+		"constraint_name" : "DF__FAT_CATEG__OBRIG__5D391FE3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "DTA_ULTIMA_CLASSIFICACAO",
+		"constraint_name" : "DF__FAT_CLIEN__DTA_U__113584D1",
+		"definition" : "('01-01-2009')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "PROCON",
+		"constraint_name" : "DF__FAT_CLIEN__PROCO__15FA39EE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "CADEIRANTE",
+		"constraint_name" : "DF__FAT_CLIEN__CADEI__17E28260",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "CONTATO_DOMINGO",
+		"constraint_name" : "DF__FAT_CLIEN__CONTA__19CACAD2",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "CONTATO_SEGUNDA",
+		"constraint_name" : "DF__FAT_CLIEN__CONTA__1BB31344",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "CONTATO_TERCA",
+		"constraint_name" : "DF__FAT_CLIEN__CONTA__1D9B5BB6",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "CONTATO_QUARTA",
+		"constraint_name" : "DF__FAT_CLIEN__CONTA__1F83A428",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "CONTATO_QUINTA",
+		"constraint_name" : "DF__FAT_CLIEN__CONTA__216BEC9A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "CONTATO_SEXTA",
+		"constraint_name" : "DF__FAT_CLIEN__CONTA__2354350C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "CONTATO_SABADO",
+		"constraint_name" : "DF__FAT_CLIEN__CONTA__253C7D7E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "EH_ZONA_FRANCA_MANAUS",
+		"constraint_name" : "DF__FAT_CLIEN__EH_ZO__290D0E62",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "CONSIDERA_NFE_B2B",
+		"constraint_name" : "DF__FAT_CLIEN__CONSI__2CDD9F46",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "ACEITA_ALTERACAO_XML",
+		"constraint_name" : "DF__FAT_CLIEN__ACEIT__2C20E73C",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "ENVIADO_DATALAKE",
+		"constraint_name" : "DF__FAT_CLIEN__ENVIA__62F1F939",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "INF_SOLICITACAO_SERVICO",
+		"constraint_name" : "DF__FAT_CLIEN__INF_S__02359A68",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "CLIENTE_RECAPAGEM_JUNSOFT",
+		"constraint_name" : "DF__FAT_CLIEN__CLIEN__112E908C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "STATUS_ENVIO_JUNSOFT",
+		"constraint_name" : "DF__FAT_CLIEN__STATU__1222B4C5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "FORNEC_SERVICO_TERCEIRO",
+		"constraint_name" : "DF__FAT_CLIEN__FORNE__2F94B2C9",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "EMAIL_AUTOMATICO",
+		"constraint_name" : "DF__FAT_CLIEN__EMAIL__6216DC4C",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "POSSUI_WHATSAPP",
+		"constraint_name" : "DF__FAT_CLIEN__POSSU__49C02FCE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "APROVA_AUTO_SERVTER",
+		"constraint_name" : "DF__FAT_CLIEN__APROV__00A65064",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE",
+		"column_name" : "PRODUTOR_RURAL_OPT_FOLHAPAG",
+		"constraint_name" : "DF__FAT_CLIEN__PRODU__4D7BB219",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE_BANCO",
+		"column_name" : "TERCEIRO",
+		"constraint_name" : "DF__FAT_CLIEN__TERCE__49410CE1",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE_CONTATO",
+		"column_name" : "CONTATO_OFICINA_MBCV",
+		"constraint_name" : "DF__FAT_CLIEN__CONTA__4C727F47",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE_CONTATO",
+		"column_name" : "CONTATO_VEICULO_MBCV",
+		"constraint_name" : "DF__FAT_CLIEN__CONTA__4D66A380",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE_LGPD",
+		"column_name" : "DIREITO_ESQUECIMENTO",
+		"constraint_name" : "DF__FAT_CLIEN__DIREI__566CF21A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE_LGPD",
+		"column_name" : "LIBERA_ATENDBALCAO",
+		"constraint_name" : "DF__FAT_CLIEN__LIBER__217AD245",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE_LGPD",
+		"column_name" : "LIBERA_ATENDOFICINA",
+		"constraint_name" : "DF__FAT_CLIEN__LIBER__226EF67E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE_LGPD",
+		"column_name" : "LIBERA_ATENDVEICULOS",
+		"constraint_name" : "DF__FAT_CLIEN__LIBER__23631AB7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE_LGPD",
+		"column_name" : "LIBERA_ADIANTAMENTO",
+		"constraint_name" : "DF__FAT_CLIEN__LIBER__24573EF0",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE_LGPD_LOG",
+		"column_name" : "DIREITO_ESQUECIMENTO",
+		"constraint_name" : "DF__FAT_CLIEN__DIREI__58553A8C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE_LGPD_LOG",
+		"column_name" : "LIBERA_ATENDBALCAO",
+		"constraint_name" : "DF__FAT_CLIEN__LIBER__254B6329",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE_LGPD_LOG",
+		"column_name" : "LIBERA_ATENDOFICINA",
+		"constraint_name" : "DF__FAT_CLIEN__LIBER__263F8762",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE_LGPD_LOG",
+		"column_name" : "LIBERA_ATENDVEICULOS",
+		"constraint_name" : "DF__FAT_CLIEN__LIBER__2733AB9B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE_LGPD_LOG",
+		"column_name" : "LIBERA_ADIANTAMENTO",
+		"constraint_name" : "DF__FAT_CLIEN__LIBER__2827CFD4",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CLIENTE_PAGTO",
+		"column_name" : "PRE_LIBERADA",
+		"constraint_name" : "DF__FAT_CLIEN__PRE_L__242F83C3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_COD_MUNICIPIO",
+		"column_name" : "MUNICIPIO_ZFM_ALC",
+		"constraint_name" : "DF__FAT_COD_M__MUNIC__5A6C643A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CODFISCAL_OPERACAO",
+		"column_name" : "USO_COMB_LUBRIF",
+		"constraint_name" : "DF__FAT_CODFI__USO_C__67FE6514",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CODFISCAL_OPERACAO",
+		"column_name" : "SIMPLES_REMESSA_FCA",
+		"constraint_name" : "DF__FAT_CODFI__SIMPL__521C72F2",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CODFISCAL_OPERACAO",
+		"column_name" : "CALC_BC_ICMS_CARGATRIB",
+		"constraint_name" : "DF__FAT_CODFI__CALC___2C0FD156",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CODFISCAL_OPERACAO",
+		"column_name" : "CALCULA_ST_CARGATRIB",
+		"constraint_name" : "DF__FAT_CODFI__CALCU__6221C944",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CODFISCAL_OPERACAO",
+		"column_name" : "ICMS_RETIDO_RECOLHER_DIREFENCA",
+		"constraint_name" : "DF__FAT_CODFI__ICMS___70E4E9E7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CODFISCAL_OPERACAO",
+		"column_name" : "INDTOT",
+		"constraint_name" : "DF__FAT_CODFI__INDTO__0DD62E50",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CODFISCAL_OPERACAO",
+		"column_name" : "CALC_TRANSF_ICMS_MEDIA",
+		"constraint_name" : "DF__FAT_CODFI__CALC___6C953616",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CONDICAO_PAGAMENTO",
+		"column_name" : "BLOQUEAR_DESCONTO",
+		"constraint_name" : "DF__FAT_CONDI__BLOQU__11F49EE0",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CONDICAO_PAGAMENTO",
+		"column_name" : "VERIFICA_AVALIACAO_USADO",
+		"constraint_name" : "DF__FAT_CONDI__VERIF__14D10B8B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CONDICAO_PAGAMENTO",
+		"column_name" : "CONFIRMA_CONDICAO_1VEZ",
+		"constraint_name" : "DF__FAT_CONDI__CONFI__004D51F6",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CONDICAO_PAGAMENTO",
+		"column_name" : "UTILIZAR_TAXA_CARTAO_CUSTO",
+		"constraint_name" : "DF__FAT_CONDI__UTILI__09C1AD97",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CONDICAO_PAGAMENTO",
+		"column_name" : "FINANCIAMENTO_VEICULO",
+		"constraint_name" : "DF__FAT_CONDI__FINAN__33B7E763",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CONDICAO_PAGAMENTO",
+		"column_name" : "ENVIA_PAYHUB",
+		"constraint_name" : "DF__FAT_CONDI__ENVIA__776DF332",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CONDICAO_PAGAMENTO",
+		"column_name" : "CONSIDERAR_NA_COMISSAO",
+		"constraint_name" : "DF__FAT_CONDI__CONSI__124F33FC",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CONDICAO_PAGAMENTO",
+		"column_name" : "CONDICAO_ESPECIAL",
+		"constraint_name" : "DF__FAT_CONDI__CONDI__4229FAFE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CONDICAO_PAGAMENTO",
+		"column_name" : "VERIFICA_CREDITO_DEPS",
+		"constraint_name" : "DF__FAT_CONDI__VERIF__23FA7999",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CONDICAO_PAGAMENTO",
+		"column_name" : "SUBTRAIR_CONDICAO_NEGATIVA",
+		"constraint_name" : "DF__FAT_CONDI__SUBTR__7A8E4FB2",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CONDICAO_PAGAMENTO",
+		"column_name" : "AUTORIZA_AUTOMATICO_PORTARIA",
+		"constraint_name" : "DF__FAT_CONDI__AUTOR__191DC3CA",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_CONDICAO_PAGAMENTO",
+		"column_name" : "DESCONSIDERA_VENCTO_FERFIMSEM",
+		"constraint_name" : "DF__FAT_CONDI__DESCO__0BE3C43D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_FRENTE_CAIXA",
+		"column_name" : "ENVIADO_SEFAZ",
+		"constraint_name" : "DF__FAT_FRENT__ENVIA__3EC74557",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_FRENTE_CAIXA",
+		"column_name" : "ICMSDESONERADO_DESCONTADONOTA",
+		"constraint_name" : "DF__FAT_FRENT__ICMSD__37887847",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_FRENTE_CAIXA",
+		"column_name" : "EMISSAO_PDV",
+		"constraint_name" : "DF__FAT_FRENT__EMISS__3F0D9731",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_INUTILIZA_NUMEROS_NFE",
+		"column_name" : "STATUS_ENVIO_DOME",
+		"constraint_name" : "DF__FAT_INUTI__STATU__3270541D",
+		"definition" : "('P')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_CAPA",
+		"column_name" : "NFE_FORMA_ENVIO",
+		"constraint_name" : "DF__FAT_MOVIM__NFE_F__092A4EB5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_CAPA",
+		"column_name" : "DEDUZ_ICMS_FPF_CUSTO_PECA",
+		"constraint_name" : "DF__FAT_MOVIM__DEDUZ__0C06BB60",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_CAPA",
+		"column_name" : "ENVIADO_DATALAKE",
+		"constraint_name" : "DF__FAT_MOVIM__ENVIA__63E61D72",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_CAPA",
+		"column_name" : "TRANSFERENCIA_AUTOMATICA",
+		"constraint_name" : "DF__FAT_MOVIM__TRANS__06062B4C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_CAPA",
+		"column_name" : "ORIGEM_BIRCAR_RENAULT",
+		"constraint_name" : "DF__FAT_MOVIM__ORIGE__0ACAE069",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_CAPA",
+		"column_name" : "ICMSDESONERADO_DESCONTADONOTA",
+		"constraint_name" : "DF__FAT_MOVIM__ICMSD__3694540E",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_CAPA",
+		"column_name" : "SUBST_PISCOFINS_PECA",
+		"constraint_name" : "DF__FAT_MOVIM__SUBST__7C929B02",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_CAPA",
+		"column_name" : "RATEIO_PIS_COFINS_FPF_TUDO",
+		"constraint_name" : "DF__FAT_MOVIM__RATEI__2ACF3255",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_CAPA",
+		"column_name" : "STATUS_ENVIO_DOME",
+		"constraint_name" : "DF__FAT_MOVIM__STATU__2E9FC339",
+		"definition" : "('P')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_CAPA",
+		"column_name" : "CALCULA_FUNRURAL",
+		"constraint_name" : "DF__FAT_MOVIM__CALCU__4E6FD652",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_CAPA",
+		"column_name" : "EH_ALCZFMCBS",
+		"constraint_name" : "DF__FAT_MOVIM__EH_AL__5C54ACAC",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_DESC_LIVRE",
+		"column_name" : "INDTOT",
+		"constraint_name" : "DF__FAT_MOVIM__INDTO__0AF9C1A5",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_ITEM",
+		"column_name" : "INDTOT",
+		"constraint_name" : "DF__FAT_MOVIM__INDTO__0A059D6C",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_SERVICO",
+		"column_name" : "INDTOT",
+		"constraint_name" : "DF__FAT_MOVIM__INDTO__0BEDE5DE",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_MOVIMENTO_VEICULO",
+		"column_name" : "INDTOT",
+		"constraint_name" : "DF__FAT_MOVIM__INDTO__0CE20A17",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_NFE_DOWNLOAD",
+		"column_name" : "NFE_DOWNLOAD",
+		"constraint_name" : "DF__FAT_NFE_D__NFE_D__26BAB19C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_NOTAS_VENDEDOR",
+		"column_name" : "TIPO_VENDEDOR",
+		"constraint_name" : "DF__FAT_NOTAS__TIPO___2C738AF2",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PARAMETRO",
+		"column_name" : "APROVA_DESPESAS_MAIS_USUARIOS",
+		"constraint_name" : "DF__FAT_PARAM__APROV__556D1592",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PARAMETRO",
+		"column_name" : "MARCAR_IMPRIMIR_LIQUIDO_NF",
+		"constraint_name" : "DF__FAT_PARAM__MARCA__0FB9B2B8",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PARAMETRO",
+		"column_name" : "HABILITA_TIMER_FC",
+		"constraint_name" : "DF__FAT_PARAM__HABIL__706BEFE8",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PARAMETRO",
+		"column_name" : "CONSIDERAR_CAT_POR_USUARIO",
+		"constraint_name" : "DF__FAT_PARAM__CONSI__1399F49E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PARAMETRO",
+		"column_name" : "BLOQUEIA_CLIENTE_COM_NFE",
+		"constraint_name" : "DF__FAT_PARAM__BLOQU__21D3055C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PARAMETROS_IMPORTACAO_XML",
+		"column_name" : "TEM_BASE_ICMS_REDUZIDO",
+		"constraint_name" : "DF__FAT_PARAM__TEM_B__06494FCA",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PARAMETROS_IMPORTACAO_XML",
+		"column_name" : "IMPORTA_MVA",
+		"constraint_name" : "DF__FAT_PARAM__IMPOR__073D7403",
+		"definition" : "('X')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PARAMETROS_IMPORTACAO_XML",
+		"column_name" : "IMPORTA_CST",
+		"constraint_name" : "DF__FAT_PARAM__IMPOR__0831983C",
+		"definition" : "('X')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PARAMETROS_IMPORTACAO_XML",
+		"column_name" : "BUSCA_NCM",
+		"constraint_name" : "DF__FAT_PARAM__BUSCA__0925BC75",
+		"definition" : "('X')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PARAMETROS_IMPORTACAO_XML",
+		"column_name" : "BAIXA_PEDIDO",
+		"constraint_name" : "DF__FAT_PARAM__BAIXA__0A19E0AE",
+		"definition" : "('P')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PARAMETROS_IMPORTACAO_XML",
+		"column_name" : "ASSOCIAR_PEDIDOS",
+		"constraint_name" : "DF__FAT_PARAM__ASSOC__0B0E04E7",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PARAMETROS_IMPORTACAO_XML",
+		"column_name" : "ICMS_DESONERADO_DESC_NOTA",
+		"constraint_name" : "DF__FAT_PARAM__ICMS___0C022920",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PARAMETROS_IMPORTACAO_XML",
+		"column_name" : "TAG_ITEM_XML",
+		"constraint_name" : "DF__FAT_PARAM__TAG_I__0CF64D59",
+		"definition" : "('C')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PARAMETROS_IMPORTACAO_XML",
+		"column_name" : "TAG_VOUTRO",
+		"constraint_name" : "DF__FAT_PARAM__TAG_V__311548EC",
+		"definition" : "('E')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PESSOA_FISICA",
+		"column_name" : "PRESTADOR_CAD_PREF_GOIANIA",
+		"constraint_name" : "DF__FAT_PESSO__PREST__4A7B512A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PESSOA_FISICA",
+		"column_name" : "PCD",
+		"constraint_name" : "DF__FAT_PESSOA___PCD__6AF30DB4",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PESSOA_JURIDICA",
+		"column_name" : "PRESTADOR_CAD_PREF_GOIANIA",
+		"constraint_name" : "DF__FAT_PESSO__PREST__4B6F7563",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_PESSOA_JURIDICA",
+		"column_name" : "EH_EMPRESA_DO_GRUPO",
+		"constraint_name" : "DF__FAT_PESSO__EH_EM__4DE5C66D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_RATEIO_DESPESA",
+		"column_name" : "PERCENTUAL",
+		"constraint_name" : "DF__FAT_RATEI__PERCE__28BA6AAC",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_RATEIO_DESPESA",
+		"column_name" : "NAO_CALCULA_PISCOFINS",
+		"constraint_name" : "DF__FAT_RATEI__NAO_C__31A4B668",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_RATEIO_DESPESA",
+		"column_name" : "CONSIDERA_REV_DIV_CTA_FORNE_ND",
+		"constraint_name" : "DF__FAT_RATEI__CONSI__663D3E42",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "IMPRIME_FATURA_NFE",
+		"constraint_name" : "DF__FAT_TIPO___IMPRI__015422C3",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "UTILIZA_VEICULOS_NOVOS",
+		"constraint_name" : "DF__FAT_TIPO___UTILI__0618D7E0",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "UTILIZA_VEICULOS_USADOS",
+		"constraint_name" : "DF__FAT_TIPO___UTILI__070CFC19",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "IMPRIME_VENDEDOR",
+		"constraint_name" : "DF__FAT_TIPO___IMPRI__09E968C4",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "ATUALIZA_DEMANDA_TRANSF",
+		"constraint_name" : "DF__FAT_TIPO___ATUAL__0ADD8CFD",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "MARCA_CALCULAR_LIQUIDO",
+		"constraint_name" : "DF__FAT_TIPO___MARCA__0A6AEDB6",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "AUTO_SOMA_ICMS_TOT_NOTA",
+		"constraint_name" : "DF__FAT_TIPO___AUTO___11A1FB2A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "AUTO_SOMA_ICMS_CUSTO_MEDIO",
+		"constraint_name" : "DF__FAT_TIPO___AUTO___12961F63",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "EXCLUIR_ICMS_BASE_PIS_COFINS",
+		"constraint_name" : "DF__FAT_TIPO___EXCLU__19431CF2",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "FAZER_PERGUNTA_I0499",
+		"constraint_name" : "DF__FAT_TIPO___FAZER__2415B120",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "FAZER_PERGUNTA_I0599",
+		"constraint_name" : "DF__FAT_TIPO___FAZER__2509D559",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "FAZER_PERGUNTA_I0600",
+		"constraint_name" : "DF__FAT_TIPO___FAZER__25FDF992",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "INFO_DUPLICATA_XML_NFE",
+		"constraint_name" : "DF__FAT_TIPO___INFO___1713E919",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "IMPRIME_NOME_VENDEDOR",
+		"constraint_name" : "DF__FAT_TIPO___IMPRI__5D1D1D05",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "NOTAS_DE_REMESSA",
+		"constraint_name" : "DF__FAT_TIPO___NOTAS__5AEABBD0",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "PRT_REDUCAO_PISCOF",
+		"constraint_name" : "DF__FAT_TIPO___PRT_R__628BDD98",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "CALCULA_PIS_COFINS_FPF",
+		"constraint_name" : "DF__FAT_TIPO___CALCU__1789B5BC",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "EXCLUIR_FCP_BASE_PIS_COFINS",
+		"constraint_name" : "DF__FAT_TIPO___EXCLU__2C1ABE4E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "VINC_DOC_FPF",
+		"constraint_name" : "DF__FAT_TIPO___VINC___233B5F8A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "PERGUNTAR_AUTORIZACAO_SAIDA",
+		"constraint_name" : "DF__FAT_TIPO___PERGU__66083418",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "CALCULA_CRED_PRES_REFORMA",
+		"constraint_name" : "DF__FAT_TIPO___CALCU__6EBD75AA",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_TIPO_TRANSACAO",
+		"column_name" : "BLOQUEAR_TRAN_OS_INT_ABERTA",
+		"constraint_name" : "DF__FAT_TIPO___BLOQU__60F96638",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VENDEDOR",
+		"column_name" : "PARTICIPA_FLUXO_LOJA",
+		"constraint_name" : "DF__FAT_VENDE__PARTI__2685A772",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VENDEDOR",
+		"column_name" : "PARTICIPA_CHECKIN",
+		"constraint_name" : "DF__FAT_VENDE__PARTI__2962141D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VENDEDOR",
+		"column_name" : "VISIVEL_OPERACOES_SITE",
+		"constraint_name" : "DF__FAT_VENDE__VISIV__1D5DC699",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VENDEDOR",
+		"column_name" : "RECEBE_AGENDAMENTO_ACESSORIOS",
+		"constraint_name" : "DF__FAT_VENDE__RECEB__3C581A5C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VENDEDOR",
+		"column_name" : "CONSULTOR_RECEPCAO",
+		"constraint_name" : "DF__FAT_VENDE__CONSU__3D4C3E95",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VENDEDOR",
+		"column_name" : "CONSULTOR_ENTREGA",
+		"constraint_name" : "DF__FAT_VENDE__CONSU__3E4062CE",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VENDEDOR",
+		"column_name" : "USA_LDV",
+		"constraint_name" : "DF__FAT_VENDE__USA_L__2693C1C6",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VENDEDOR",
+		"column_name" : "ENVIA_SOBVW",
+		"constraint_name" : "DF__FAT_VENDE__ENVIA__2788B156",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VENDEDOR",
+		"column_name" : "APARECE_AGENDA_ONLINE_FCA",
+		"constraint_name" : "DF__FAT_VENDE__APARE__66A6873F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_VENDEDOR",
+		"column_name" : "APARECE_DIGITAL_APPOINTMENT",
+		"constraint_name" : "DF__FAT_VENDE__APARE__300B4AC3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_XMLNFE_RECEBIDO",
+		"column_name" : "IMPORTADO",
+		"constraint_name" : "DF__FAT_XMLNF__IMPOR__2E26C93A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FAT_XMLNFE_RECEBIDO",
+		"column_name" : "CONHECIMENTO_FRETE",
+		"constraint_name" : "DF__FAT_XMLNF__CONHE__2F1AED73",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FCA_LEAD_CONTATO",
+		"column_name" : "PASSANTE",
+		"constraint_name" : "DF__FCA_LEAD___PASSA__08E297F7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FCA_PARAMETRO",
+		"column_name" : "UTILIZA_INTEGRACAO_CRM",
+		"constraint_name" : "DF__FCA_PARAM__UTILI__34B62D3D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FCA_PARAMETRO",
+		"column_name" : "ENCAMINHAMENTO_LEADS",
+		"constraint_name" : "DF__FCA_PARAM__ENCAM__35AA5176",
+		"definition" : "('D')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FCA_PARAMETRO",
+		"column_name" : "ENVIAR_PASSANTES_POSVENDAS",
+		"constraint_name" : "DF__FCA_PARAM__ENVIA__2BB6D2E8",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FCA_PARAMETRO",
+		"column_name" : "ENVIAR_PASSANTES_SHOWROOM",
+		"constraint_name" : "DF__FCA_PARAM__ENVIA__2CAAF721",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FCA_PARAMETRO",
+		"column_name" : "ENCAMINHAMENTO_LEADS_OFI",
+		"constraint_name" : "DF__FCA_PARAM__ENCAM__6D6F87AC",
+		"definition" : "('D')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FCA_PARAMETRO",
+		"column_name" : "DIAS_ENCERRAMENTO_VEI",
+		"constraint_name" : "DF__FCA_PARAM__DIAS___06FA4F85",
+		"definition" : "((120))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FCA_PARAMETRO",
+		"column_name" : "DIAS_ENCERRAMENTO_OFI",
+		"constraint_name" : "DF__FCA_PARAM__DIAS___07EE73BE",
+		"definition" : "((120))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FCA_PARAMETRO",
+		"column_name" : "INTEGRAR_LEADS_POSVENDAS",
+		"constraint_name" : "DF__FCA_PARAM__INTEG__0AB5D1D0",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FCA_PARAMETRO",
+		"column_name" : "UTILIZA_INT_OS_20",
+		"constraint_name" : "DF__FCA_PARAM__UTILI__6122B813",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FCA_PARAMETRO",
+		"column_name" : "UTILIZA_AGENDAMENTO_ONLINE_FCA",
+		"constraint_name" : "DF__FCA_PARAM__UTILI__65B26306",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FCA_PARAMETRO",
+		"column_name" : "REVENDA_OPERACAO_RAM",
+		"constraint_name" : "DF__FCA_PARAM__REVEN__61F7AC12",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_BANCO",
+		"column_name" : "CONSIDERAR_BLOQUETO_PROPOSTA",
+		"constraint_name" : "DF__FIN_BANCO__CONSI__61A66D40",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_BANCO",
+		"column_name" : "CALCULA_ATRASO",
+		"constraint_name" : "DF__FIN_BANCO__CALCU__68536ACF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_BANCO",
+		"column_name" : "TIPO_ENTREGA",
+		"constraint_name" : "DF__FIN_BANCO__TIPO___6A3BB341",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_BANCO",
+		"column_name" : "TIPO_CARTEIRA",
+		"constraint_name" : "DF__FIN_BANCO__TIPO___6C23FBB3",
+		"definition" : "('B')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_BANCO",
+		"column_name" : "AREDONDAR_NA_PRIMEIRA_PARCELA",
+		"constraint_name" : "DF__FIN_BANCO__AREDO__0141762F",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_BANCO",
+		"column_name" : "NOSSONUMERO_17DIG_BB",
+		"constraint_name" : "DF__FIN_BANCO__NOSSO__479EE47F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_CAIXA",
+		"column_name" : "CAIXA_INATIVO",
+		"constraint_name" : "DF__FIN_CAIXA__CAIXA__27C64673",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_COAF_PARAMETRO",
+		"column_name" : "ATIVAR_WEB_SERVICE",
+		"constraint_name" : "DF__FIN_COAF___ATIVA__7633AEE9",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_CONTA_OPENBANKING",
+		"column_name" : "CADASTRAR_CONTA_DDA",
+		"constraint_name" : "DF__FIN_CONTA__CADAS__436837FA",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_CONTA_OPENBANKING",
+		"column_name" : "INTEGRAR_COD_BARRAS_AUTOMATICO",
+		"constraint_name" : "DF__FIN_CONTA__INTEG__445C5C33",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_CONTA_OPENBANKING",
+		"column_name" : "AUTORIZA_PAGAMENTO_PIX",
+		"constraint_name" : "DF__FIN_CONTA__AUTOR__03ADA598",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_ORIGEM",
+		"column_name" : "CLIENTE_FORNECEDOR",
+		"constraint_name" : "DF__FIN_ORIGE__CLIEN__04EFA97D",
+		"definition" : "('A')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_ORIGEM",
+		"column_name" : "INATIVO_CONSULTAS",
+		"constraint_name" : "DF__FIN_ORIGE__INATI__5E176A2C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_ORIGEM",
+		"column_name" : "SOLICITA_APROVACAO_ORIGEM",
+		"constraint_name" : "DF__FIN_ORIGE__SOLIC__23218CE7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_ORIGEM",
+		"column_name" : "TRIBUTO",
+		"constraint_name" : "DF__FIN_ORIGE__TRIBU__07C84F3F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_ORIGEM",
+		"column_name" : "DIAS_MINIMO_VECTO",
+		"constraint_name" : "DF__FIN_ORIGE__DIAS___52EA72AC",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_ORIGEM",
+		"column_name" : "PERMITE_VENCTO_FERIADO",
+		"constraint_name" : "DF__FIN_ORIGE__PERMI__7A243B5E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "DEVOLUCAO_AUTOMATICA",
+		"constraint_name" : "DF__FIN_PARAM__DEVOL__09B45E9A",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "CON_CONPAGCLI_SO_NFDESPESA",
+		"constraint_name" : "DF__FIN_PARAM__CON_C__161A357F",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "INT_CONTABIL_DEV",
+		"constraint_name" : "DF__FIN_PARAM__INT_C__2744C181",
+		"definition" : "('C')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "VALIDA_CODIGOBARRA",
+		"constraint_name" : "DF__FIN_PARAM__VALID__2FDA0782",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "USA_ADIANTAMENTO_IGUAL_PAG",
+		"constraint_name" : "DF__FIN_PARAM__USA_A__16B0C90A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "RATEIO_IMPOSTOS_ORIGEM",
+		"constraint_name" : "DF__FIN_PARAM__RATEI__5AF0E4BE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "TIPO_ARMAZENAMENTO",
+		"constraint_name" : "DF__FIN_PARAM__TIPO___1E3CDC39",
+		"definition" : "('P')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "DESCONTAR_TAXA_ADMIN_PAGTO_TR",
+		"constraint_name" : "DF__FIN_PARAM__DESCO__1F310072",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "DESCONTA_ISS_1A_PARCELA",
+		"constraint_name" : "DF__FIN_PARAM__DESCO__2E092FAE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "GERA_AD_ALTERACAO",
+		"constraint_name" : "DF__FIN_PARAM__GERA___31D9C092",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "BLOQ_PGTO_FORN_DEVEDOR",
+		"constraint_name" : "DF__FIN_PARAM__BLOQ___7F592DBD",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "INFORMA_CAIXA_BANCO_BAIXA_ADTO",
+		"constraint_name" : "DF__FIN_PARAM__INFOR__49872CF1",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "CALCGERA_TIT_ICMSST_NAO_DESTAC",
+		"constraint_name" : "DF__FIN_PARAM__CALCG__71601421",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "GERA_TITULO_BANCO_ALT_CAIXA",
+		"constraint_name" : "DF__FIN_PARAM__GERA___7AAA5290",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "BLOCK_AD_NEGATIVO",
+		"constraint_name" : "DF__FIN_PARAM__BLOCK__2DAB9F00",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "GERA_TITULO_PAGAR_DIFAL",
+		"constraint_name" : "DF__FIN_PARAM__GERA___33647856",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "EXIGE_AUT_PG_TITULOS",
+		"constraint_name" : "DF__FIN_PARAM__EXIGE__354CC0C8",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "GERA_LCTO_TRANSF_CXBC",
+		"constraint_name" : "DF__FIN_PARAM__GERA___7F317290",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "GERA_TITULO_PAGAR_FCP",
+		"constraint_name" : "DF__FIN_PARAM__GERA___1BCDB13E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "GERA_TITULO_PAGAR_ICMS_ANTEC",
+		"constraint_name" : "DF__FIN_PARAM__GERA___66BB95D8",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "GERA_TITULO_PAGAR_ICMS_RAR",
+		"constraint_name" : "DF__FIN_PARAM__GERA___2DA3140D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "BLOQ_ACRES_BANCO_ESTAB",
+		"constraint_name" : "DF__FIN_PARAM__BLOQ___372C7E47",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "CONS_AD_RECEB_COMPRA_PRAZO",
+		"constraint_name" : "DF__FIN_PARAM__CONS___67CFB5A2",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "EXIBE_MSG_ADIANTAMENTO",
+		"constraint_name" : "DF__FIN_PARAM__EXIBE__0FA89CD2",
+		"definition" : "('E')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "GERA_TIT_PAGAR_FCPST_ARECOLHER",
+		"constraint_name" : "DF__FIN_PARAM__GERA___3CBB3A6B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "GERA_TITULO_PAGAR_FUNRURAL",
+		"constraint_name" : "DF__FIN_PARAM__GERA___4F63FA8B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "BLOQ_VALOR_DEVERGENTE_EXTRATO",
+		"constraint_name" : "DF__FIN_PARAM__BLOQ___262CDACE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "BLOQ_CAMPOS_PAGTO_POR_CONTA",
+		"constraint_name" : "DF__FIN_PARAM__BLOQ___2E580C7B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "LEVAR_DES_NF_DESPESA_TITULO",
+		"constraint_name" : "DF__FIN_PARAM__LEVAR__03039A22",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "IMPORTA_BONUS_CHASSI_TF",
+		"constraint_name" : "DF__FIN_PARAM__IMPOR__7D9FC687",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "SOMAR_OUTROS_VALORES_CP",
+		"constraint_name" : "DF__FIN_PARAM__SOMAR__4CE78093",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "GERAR_GNRE_UNIFICADO",
+		"constraint_name" : "DF__FIN_PARAM__GERAR__2C109CAD",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "PERMITE_FECHA_CX_PEDIDO_ERRO",
+		"constraint_name" : "DF__FIN_PARAM__PERMI__6C80277D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "SN_UTILIZ_REAP_RECEB_CART_E_NF",
+		"constraint_name" : "DF__FIN_PARAM__SN_UT__36E330DB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "ADTO_PIX_GERA_CARTAO_BAIXADO",
+		"constraint_name" : "DF__FIN_PARAM__ADTO___3ED9585E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "OPCOES_CANCELAMENTO_PIX",
+		"constraint_name" : "DF__FIN_PARAM__OPCOE__0EC030E8",
+		"definition" : "('P')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "UTILIZA_BANCO_CENTRALIZADO",
+		"constraint_name" : "DF__FIN_PARAM__UTILI__451C4199",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_PARAMETRO",
+		"column_name" : "PADRONIZA_NOMEN_ARQREMESSA",
+		"constraint_name" : "DF__FIN_PARAM__PADRO__40228252",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO",
+		"column_name" : "VAL_HOLD_BACK",
+		"constraint_name" : "DF__FIN_TITUL__VAL_H__4E5E8EA2",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO",
+		"column_name" : "VAL_CONTRIBUICAO",
+		"constraint_name" : "DF__FIN_TITUL__VAL_C__4F52B2DB",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO",
+		"column_name" : "VAL_BONUS",
+		"constraint_name" : "DF__FIN_TITUL__VAL_B__5046D714",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO",
+		"column_name" : "VAL_FLOOR_PLAN",
+		"constraint_name" : "DF__FIN_TITUL__VAL_F__513AFB4D",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO",
+		"column_name" : "VAL_OUTRAS_DESPESAS",
+		"constraint_name" : "DF__FIN_TITUL__VAL_O__522F1F86",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO",
+		"column_name" : "EXCLUI_TITULO_NA_DEVOLUCAO",
+		"constraint_name" : "DF__FIN_TITUL__EXCLU__550B8C31",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO",
+		"column_name" : "AUTORIZA_PAGAMENTO",
+		"constraint_name" : "DF__FIN_TITUL__AUTOR__3640E501",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO",
+		"column_name" : "ENVIADO_EQUALSCORE",
+		"constraint_name" : "DF__FIN_TITUL__ENVIA__1EB50AE1",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO",
+		"column_name" : "DEVOLUCAO",
+		"constraint_name" : "DF__FIN_TITUL__DEVOL__1F40B174",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO_ORIGEM",
+		"column_name" : "VAL_HOLD_BACK",
+		"constraint_name" : "DF__FIN_TITUL__VAL_H__6A06A917",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO_ORIGEM",
+		"column_name" : "VAL_CONTRIBUICAO",
+		"constraint_name" : "DF__FIN_TITUL__VAL_C__6AFACD50",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO_ORIGEM",
+		"column_name" : "VAL_BONUS",
+		"constraint_name" : "DF__FIN_TITUL__VAL_B__6BEEF189",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO_ORIGEM",
+		"column_name" : "VAL_FLOOR_PLAN",
+		"constraint_name" : "DF__FIN_TITUL__VAL_F__6CE315C2",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO_ORIGEM",
+		"column_name" : "VAL_OUTRAS_DESPESAS",
+		"constraint_name" : "DF__FIN_TITUL__VAL_O__6DD739FB",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FIN_TITULO_PAGAMENTO",
+		"column_name" : "TIPO_TRANSACAO",
+		"constraint_name" : "DF__FIN_TITUL__TIPO___73901351",
+		"definition" : "('BN')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FOR_AUTO_BUSCA_PEDIDO_STATUS",
+		"column_name" : "ENVIADO_AUTO_BUSCA",
+		"constraint_name" : "DF__FOR_AUTO___ENVIA__136BDEB9",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FOR_OWS_SG_LINHA_EXCEPTIONCODE",
+		"column_name" : "ULTIMO_RECEBIDO",
+		"constraint_name" : "DF__FOR_OWS_S__ULTIM__377E56A6",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FOR_PARAMETRO",
+		"column_name" : "UTILIZA_NOVA_AGENDA",
+		"constraint_name" : "DF__FOR_PARAM__UTILI__3A6FD1EA",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FOR_PARAMETRO",
+		"column_name" : "UTILIZA_OWS",
+		"constraint_name" : "DF__FOR_PARAM__UTILI__2653CAA4",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FOR_PARAMETRO",
+		"column_name" : "UTILIZA_SALES_FORCE",
+		"constraint_name" : "DF__FOR_PARAM__UTILI__2BC3568E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FOR_PARAMETRO",
+		"column_name" : "UTILIZA_SALES_FORDFACIL",
+		"constraint_name" : "DF__FOR_PARAM__UTILI__2CB77AC7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FOR_PARAMETRO",
+		"column_name" : "UTILIZA_FORDSEIS",
+		"constraint_name" : "DF__FOR_PARAM__UTILI__2DAC6A57",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FOR_PARAMETRO",
+		"column_name" : "UTILIZA_OWS_PROD",
+		"constraint_name" : "DF__FOR_PARAM__UTILI__3934C24A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FOR_PARAMETRO",
+		"column_name" : "AUTENTICACAO_TOKEN",
+		"constraint_name" : "DF__FOR_PARAM__AUTEN__26D6E644",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FOR_PARAMETRO",
+		"column_name" : "UTILIZA_TOKEN_OWS_PROD",
+		"constraint_name" : "DF__FOR_PARAM__UTILI__3ADDDEF1",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FOR_PARAMETRO",
+		"column_name" : "NOVA_AGE_ENC_NF",
+		"constraint_name" : "DF__FOR_PARAM__NOVA___63FFF015",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FOR_PARAMETRO",
+		"column_name" : "NOVA_AGE_ENC_ENTREGA",
+		"constraint_name" : "DF__FOR_PARAM__NOVA___64F4144E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FOR_PARAMETRO",
+		"column_name" : "NOVA_AGE_ENC_OS",
+		"constraint_name" : "DF__FOR_PARAM__NOVA___65E83887",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_PARAMETRO",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__FRA_PARAM__ATIVO__22C65E3E",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_PARAMETRO",
+		"column_name" : "MERCADOID",
+		"constraint_name" : "DF__FRA_PARAM__MERCA__23BA8277",
+		"definition" : "('92314CC6-2FB6-449D-9B64-EB59B0FB9BF8')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_PARAMETRO",
+		"column_name" : "GRANT_TYPE",
+		"constraint_name" : "DF__FRA_PARAM__GRANT__24AEA6B0",
+		"definition" : "('CLIENT_CREDENTIALS')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_PARAMETRO",
+		"column_name" : "PAGE_SIZE_CONSULTA_API",
+		"constraint_name" : "DF__FRA_PARAM__PAGE___25A2CAE9",
+		"definition" : "((10))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_PARAMETRO",
+		"column_name" : "ESPECIFICACAOID_NCM",
+		"constraint_name" : "DF__FRA_PARAM__ESPEC__2696EF22",
+		"definition" : "('EC5BA745-DEF1-45C9-A7BE-A7289414CD6B')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_PARAMETRO",
+		"column_name" : "ESPECIFICACAOID_EAN",
+		"constraint_name" : "DF__FRA_PARAM__ESPEC__278B135B",
+		"definition" : "('436107D5-479B-4CC3-9936-CA40983A6122')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "FRA_PRODUTO_ESPECIFICACAO",
+		"column_name" : "IMPORTANTE",
+		"constraint_name" : "DF__FRA_PRODU__IMPOR__3208A1CE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_AGENDAMENTO",
+		"column_name" : "SITUACAO",
+		"constraint_name" : "DF__GER_AGEND__SITUA__4964CF5B",
+		"definition" : "('A')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_AGENDAMENTO",
+		"column_name" : "CORPO_NO_ASSUNTO",
+		"constraint_name" : "DF__GER_AGEND__CORPO__29CE8A76",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_APROVACAO",
+		"column_name" : "TIPO_SERVICO_OS",
+		"constraint_name" : "DF__GER_APROV__TIPO___5E2D441C",
+		"definition" : "('E')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CODIGO_TRIBUTACAO",
+		"column_name" : "ORIGEM",
+		"constraint_name" : "DF__GER_CODIG__ORIGE__56BECA79",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_GIBSCBS",
+		"constraint_name" : "DF__GER_CST__IND_GIB__3036334C",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_GESTORNOCRED",
+		"constraint_name" : "DF__GER_CST__IND_GES__59C258C4",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_NFEABI",
+		"constraint_name" : "DF__GER_CST__IND_NFE__5AB67CFD",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_NFE",
+		"constraint_name" : "DF__GER_CST__IND_NFE__5BAAA136",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_NFCE",
+		"constraint_name" : "DF__GER_CST__IND_NFC__5C9EC56F",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_CTE",
+		"constraint_name" : "DF__GER_CST__IND_CTE__5D92E9A8",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_CTEOS",
+		"constraint_name" : "DF__GER_CST__IND_CTE__5E870DE1",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_BPE",
+		"constraint_name" : "DF__GER_CST__IND_BPE__5F7B321A",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_BPETA",
+		"constraint_name" : "DF__GER_CST__IND_BPE__606F5653",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_BPETM",
+		"constraint_name" : "DF__GER_CST__IND_BPE__61637A8C",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_NF3E",
+		"constraint_name" : "DF__GER_CST__IND_NF3__62579EC5",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_NFSE",
+		"constraint_name" : "DF__GER_CST__IND_NFS__634BC2FE",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_NFSEVIA",
+		"constraint_name" : "DF__GER_CST__IND_NFS__643FE737",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_NFCOM",
+		"constraint_name" : "DF__GER_CST__IND_NFC__65340B70",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_NFAG",
+		"constraint_name" : "DF__GER_CST__IND_NFA__66282FA9",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_NFGAS",
+		"constraint_name" : "DF__GER_CST__IND_NFG__671C53E2",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_DERE",
+		"constraint_name" : "DF__GER_CST__IND_DER__6810781B",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_GTRANSFCRED",
+		"constraint_name" : "DF__GER_CST__IND_GTR__69049C54",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_GIBSCBSMONO",
+		"constraint_name" : "DF__GER_CST__IND_GIB__69F8C08D",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_GRED",
+		"constraint_name" : "DF__GER_CST__IND_GRE__6AECE4C6",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_GDIF",
+		"constraint_name" : "DF__GER_CST__IND_GDI__6BE108FF",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_GCREDPRESIBSZFM",
+		"constraint_name" : "DF__GER_CST__IND_GCR__6CD52D38",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_CST",
+		"column_name" : "IND_GAJUSTECOMPET",
+		"constraint_name" : "DF__GER_CST__IND_GAJ__6DC95171",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_DBVERSAO",
+		"column_name" : "EXECUTANDO_SCRIPTS",
+		"constraint_name" : "DF__GER_DBVER__EXECU__64D34D66",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_DEFAULT",
+		"column_name" : "COMPARTILHAR",
+		"constraint_name" : "DF__GER_DEFAU__COMPA__1439131C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_DEPARTAMENTO",
+		"column_name" : "EXIBE_AJUSTE_IND_INVENTARIO",
+		"constraint_name" : "DF__GER_DEPAR__EXIBE__4C1E44E3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_EMPRESA",
+		"column_name" : "TIPOINT_NFE",
+		"constraint_name" : "DF__GER_EMPRE__TIPOI__6DA22FD1",
+		"definition" : "('A')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_EMPRESA",
+		"column_name" : "INTEGRACAO_SAP",
+		"constraint_name" : "DF__GER_EMPRE__INTEG__6F8A7843",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_EMPRESA",
+		"column_name" : "USA_DATALAKE",
+		"constraint_name" : "DF__GER_EMPRE__USA_D__6109B0C7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_EMPRESA",
+		"column_name" : "AUTENTICACAO_FEDERADA",
+		"constraint_name" : "DF__GER_EMPRE__AUTEN__6F078E6D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_EMPRESA",
+		"column_name" : "EMPRESA_MASTER",
+		"constraint_name" : "DF__GER_EMPRE__EMPRE__58792ED0",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_ESTADO",
+		"column_name" : "PERMITIR_NF_REF_CHAVE",
+		"constraint_name" : "DF__GER_ESTAD__PERMI__303567F5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_ESTADO",
+		"column_name" : "FCP_COMPOE_ICMSST_DIFAL",
+		"constraint_name" : "DF__GER_ESTAD__FCP_C__5389912A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_ESTADO",
+		"column_name" : "NAODESCONTAR_ICMSDESONERADO",
+		"constraint_name" : "DF__GER_ESTAD__NAODE__17406850",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_FORMULARIO_CAPA",
+		"column_name" : "LUGAR_VAL_EXTENSO",
+		"constraint_name" : "DF__GER_FORMU__LUGAR__7FC0E00C",
+		"definition" : "('B')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_FORMULARIO_CAPA",
+		"column_name" : "FORMULARIO_NFSE",
+		"constraint_name" : "DF__GER_FORMU__FORMU__0856260D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_FORMULARIO_CAPA",
+		"column_name" : "TIPO_VALOR_PECA",
+		"constraint_name" : "DF__GER_FORMU__TIPO___59FCC085",
+		"definition" : "('B')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_G4_PARAMETRO",
+		"column_name" : "INTEGRACAO",
+		"constraint_name" : "DF__GER_G4_PA__INTEG__6672486C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_G4_PARAMETRO",
+		"column_name" : "AMBIENTE",
+		"constraint_name" : "DF__GER_G4_PA__AMBIE__67666CA5",
+		"definition" : "('H')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_G4_PARAMETRO_SERV",
+		"column_name" : "INTEGRACAO",
+		"constraint_name" : "DF__GER_G4_PA__INTEG__449231B4",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_G4_PARAMETRO_SERV",
+		"column_name" : "AMBIENTE",
+		"constraint_name" : "DF__GER_G4_PA__AMBIE__458655ED",
+		"definition" : "('H')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_GRID_USUARIO",
+		"column_name" : "CONTADOR",
+		"constraint_name" : "DF__GER_GRID___CONTA__0F03239C",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_GRID_USUARIO",
+		"column_name" : "DES_CONFIGURACAO",
+		"constraint_name" : "DF__GER_GRID___DES_C__0FF747D5",
+		"definition" : "('CONFIGURAÇÃO PADRÃO')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_INTEGRA_DEPS",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__GER_INTEG__ATIVO__769DC33D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_INTEGRA_DEPS",
+		"column_name" : "GRAVA_LOG",
+		"constraint_name" : "DF__GER_INTEG__GRAVA__24EE9DD2",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_LICENSE_SERVER",
+		"column_name" : "STATUS",
+		"constraint_name" : "DF__GER_LICEN__STATU__44C73BDE",
+		"definition" : "('B')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_NFE_SERVIDOR",
+		"column_name" : "CRIADO",
+		"constraint_name" : "DF__GER_NFE_S__CRIAD__324C5FD9",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_NFE_SERVIDOR",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__GER_NFE_S__ATIVO__33408412",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_NFE_WEBSERVICE",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__GER_NFE_W__ATIVO__38F95D68",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_NFE_WEBSERVICE",
+		"column_name" : "OPERACAO",
+		"constraint_name" : "DF__GER_NFE_W__OPERA__3AE1A5DA",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_ORIGEM_FATOS",
+		"column_name" : "INFORMAR_CONTRAPARTIDA",
+		"constraint_name" : "DF__GER_ORIGE__INFOR__203A3344",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_PARAMETRO_PPS",
+		"column_name" : "USA_PRECO_SITE_PPSO",
+		"constraint_name" : "DF__GER_PARAM__USA_P__0BA9F609",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_PARAMETRO_PPS",
+		"column_name" : "USA_PPSO_JSON",
+		"constraint_name" : "DF__GER_PARAM__USA_P__32289D5F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_PRO_SYNC_COMANDO",
+		"column_name" : "MOMENTO_EXECUCAO",
+		"constraint_name" : "DF__GER_PRO_S__MOMEN__699C94C3",
+		"definition" : "('I')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_PROGRAMA",
+		"column_name" : "EXPORTAR_EMPRESA_REVENDA",
+		"constraint_name" : "DF__GER_PROGR__EXPOR__76F68FE1",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REFERENCIA_FATOS",
+		"column_name" : "NATUREZA",
+		"constraint_name" : "DF__GER_REFER__NATUR__212E577D",
+		"definition" : "('D')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REFERENCIA_FATOS",
+		"column_name" : "CONTAB_DEB_CRE_MESMO_CC",
+		"constraint_name" : "DF__GER_REFER__CONTA__4B2A20AA",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_RESPONSANSAVEL_TECNICO",
+		"column_name" : "PRODUTO",
+		"constraint_name" : "DF__GER_RESPO__PRODU__0EEA4E1A",
+		"definition" : "('D')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "VERIFICA_MUNICIPIO",
+		"constraint_name" : "DF__GER_REVEN__VERIF__1E105D02",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "RATEIO_DESPESA_CONTABIL",
+		"constraint_name" : "DF__GER_REVEN__RATEI__23C93658",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "RATEIO_DESPESA_GERENCIAL",
+		"constraint_name" : "DF__GER_REVEN__RATEI__24BD5A91",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "GERA_DET_VEICULO",
+		"constraint_name" : "DF__GER_REVEN__GERA___2A7633E7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "NFE_IMPRIME_CRT",
+		"constraint_name" : "DF__GER_REVEN__NFE_I__424DBD78",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "ARRENDONDA_ISSQN",
+		"constraint_name" : "DF__GER_REVEN__ARREN__452A2A23",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "ARREDONDAMENTO_DECIMAIS",
+		"constraint_name" : "DF__GER_REVEN__ARRED__47127295",
+		"definition" : "((2))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "UTILIZA_OFFICE_365",
+		"constraint_name" : "DF__GER_REVEN__UTILI__546C6DB3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "NFE_UTILIZA_OFFICE_365",
+		"constraint_name" : "DF__GER_REVEN__NFE_U__5654B625",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "ATIVA_DPEC_AUTOMATICO",
+		"constraint_name" : "DF__GER_REVEN__ATIVA__583CFE97",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "UTILIZA_SUFRAMA_NORDESTE",
+		"constraint_name" : "DF__GER_REVEN__UTILI__5A254709",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "USA_NFCE",
+		"constraint_name" : "DF__GER_REVEN__USA_N__5C0D8F7B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "NFE_TIPO_CONEXAO",
+		"constraint_name" : "DF__GER_REVEN__NFE_T__5DF5D7ED",
+		"definition" : "('A')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "NFE_BLOQ_CLIENTE_CAD",
+		"constraint_name" : "DF__GER_REVEN__NFE_B__5FDE205F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "USA_NOTA_FISCAL_GAUCHA",
+		"constraint_name" : "DF__GER_REVEN__USA_N__61C668D1",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "REALIZA_ASSINATURA",
+		"constraint_name" : "DF__GER_REVEN__REALI__668B1DEE",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "ZERAR_VALOR_DESCONTO_NFSE",
+		"constraint_name" : "DF__GER_REVEN__ZERAR__69678A99",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "TEMPO_CONSULTA_ENVIO",
+		"constraint_name" : "DF__GER_REVEN__TEMPO__6A5BAED2",
+		"definition" : "((5))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "PROC_SUBSTITUICAO_NFSE",
+		"constraint_name" : "DF__GER_REVEN__PROC___6B4FD30B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "NFS_UTILIZA_OFFICE_365",
+		"constraint_name" : "DF__GER_REVEN__NFS_U__6D381B7D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "DOWNLOAD_NFE",
+		"constraint_name" : "DF__GER_REVEN__DOWNL__74D93D45",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "CONF_OPERACAO_AUTO",
+		"constraint_name" : "DF__GER_REVEN__CONF___76C185B7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "DOWNLOAD_RAIZ_CNPJ",
+		"constraint_name" : "DF__GER_REVEN__DOWNL__78A9CE29",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "USAR_4DECIMAIS_PECAS",
+		"constraint_name" : "DF__GER_REVEN__USAR___5F959E4A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "INTEGRA_DESCONTO_SEPARADO",
+		"constraint_name" : "DF__GER_REVEN__INTEG__12E03826",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "IMPRIMIR_ROMANEIO_DANFE",
+		"constraint_name" : "DF__GER_REVEN__IMPRI__14C88098",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "EMITE_NFE_DEPOIS_TEF",
+		"constraint_name" : "DF__GER_REVEN__EMITE__5478F159",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "EXIGE_NF_BOLETO_CHECKAUTO",
+		"constraint_name" : "DF__GER_REVEN__EXIGE__58147813",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "RECEBE_EMAIL_CHECKAUTO",
+		"constraint_name" : "DF__GER_REVEN__RECEB__59089C4C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "ALTERAR_DTA_ENTRADA_SAIDA",
+		"constraint_name" : "DF__GER_REVEN__ALTER__2EFD53E7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "USA_INTEGRACAO_FINAN_ITAU",
+		"constraint_name" : "DF__GER_REVEN__USA_I__369E75AF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "USA_NOME_FANTASIA_RODAPE",
+		"constraint_name" : "DF__GER_REVEN__USA_N__3575474C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "COMO_CALCULAR_ICMS_COMO_DESC",
+		"constraint_name" : "DF__GER_REVEN__COMO___40E6F9F8",
+		"definition" : "('I')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "VALIDA_CHAVE_NFE_ENTRADA",
+		"constraint_name" : "DF__GER_REVEN__VALID__26F21DCB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "USA_MARKET_PLACES",
+		"constraint_name" : "DF__GER_REVEN__USA_M__27E64204",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "USA_CONTROLE_SENHAS",
+		"constraint_name" : "DF__GER_REVEN__USA_C__59688EFF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "INTEGRAR_NF_BRUTO",
+		"constraint_name" : "DF__GER_REVEN__INTEG__5F216855",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "ENVIADO_DATALAKE",
+		"constraint_name" : "DF__GER_REVEN__ENVIA__61FDD500",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "REVENDA_VENDE_OUTRA_MARCA",
+		"constraint_name" : "DF__GER_REVEN__REVEN__4C63999C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "GRAVA_LANC_CX_NFCANCEL",
+		"constraint_name" : "DF__GER_REVEN__GRAVA__2FE7567F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "NAODESCONTAR_ICMSDESONERADO",
+		"constraint_name" : "DF__GER_REVEN__NAODE__35A02FD5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "USA_PAYHUB",
+		"constraint_name" : "DF__GER_REVEN__USA_P__7862176B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "CONS_ONLINE_CLI",
+		"constraint_name" : "DF__GER_REVEN__CONS___79563BA4",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "BASE_PCC_TPROD_ICMSST",
+		"constraint_name" : "DF__GER_REVEN__BASE___7B3E8416",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "USA_INTEGRACAO_FLYCHAT",
+		"constraint_name" : "DF__GER_REVEN__USA_I__158865FE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "VALIDA_LANC_CONTRAPARTIDA",
+		"constraint_name" : "DF__GER_REVEN__VALID__3303BA4C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "USA_LGPD",
+		"constraint_name" : "DF__GER_REVEN__USA_L__76D9C1AC",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "USA_INTEGRACAO_SIMOVA",
+		"constraint_name" : "DF__GER_REVEN__USA_I__0DC813FC",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "INFOCAR_SOL_PDF_AVA",
+		"constraint_name" : "DF__GER_REVEN__INFOC__28E6E9E3",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "INFOCAR_SOL_PDF_SEG",
+		"constraint_name" : "DF__GER_REVEN__INFOC__29DB0E1C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "AMBIENTE_DOME",
+		"constraint_name" : "DF__GER_REVEN__AMBIE__2F93E772",
+		"definition" : "('H')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "ATIVO_DOME",
+		"constraint_name" : "DF__GER_REVEN__ATIVO__30880BAB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "USAR_INTEGRACAO_WMS",
+		"constraint_name" : "DF__GER_REVEN__USAR___7BAA2F18",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "INTEGRACAO_EL",
+		"constraint_name" : "DF__GER_REVEN__INTEG__2EA08E90",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "PERMITE_ALTERAR_ENDERECO_NF",
+		"constraint_name" : "DF__GER_REVEN__PERMI__6F65EA72",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "VENDE_VEI_INACABADO",
+		"constraint_name" : "DF__GER_REVEN__VENDE__00907674",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "UTILIZA_INT_CTRL_STOCK",
+		"constraint_name" : "DF__GER_REVEN__UTILI__036CE31F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "TIPO_CC_CTB_IMP_OS",
+		"constraint_name" : "DF__GER_REVEN__TIPO___28544F0B",
+		"definition" : "('V')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "IMPRIME_NFAJUSTE_SAIDA",
+		"constraint_name" : "DF__GER_REVEN__IMPRI__3A08EAF2",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "UTILIZA_PROC_APROVA_USADO",
+		"constraint_name" : "DF__GER_REVEN__UTILI__4718CD4D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "OBRIGA_APROV_UTILIZ_TRANSAC",
+		"constraint_name" : "DF__GER_REVEN__OBRIG__60A39526",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "EMPRESA_REVENDA_MATRIZ",
+		"constraint_name" : "DF__GER_REVEN__EMPRE__74FF938E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "USA_MOV_CENTRO_CUSTO",
+		"constraint_name" : "DF__GER_REVEN__USA_M__6F11B00E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "CALCULA_FUNRURAL",
+		"constraint_name" : "DF__GER_REVEN__CALCU__4C878DE0",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "UTILIZA_PROC_APROVA_ZERO",
+		"constraint_name" : "DF__GER_REVEN__UTILI__682FA855",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "GERA_NFSE_APOS_NFCE",
+		"constraint_name" : "DF__GER_REVEN__GERA___1E56AEDC",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "DADOS_RECEB_BENEF",
+		"constraint_name" : "DF__GER_REVEN__DADOS__3B47F345",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "TIMEOUT_LINK_PAGAMENTO",
+		"constraint_name" : "DF__GER_REVEN__TIMEO__3D303BB7",
+		"definition" : "((2))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "MEIO_PAGTO_ELETRONICO",
+		"constraint_name" : "DF__GER_REVEN__MEIO___270BF06E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "MEIO_PAGTO_POSCONNECT",
+		"constraint_name" : "DF__GER_REVEN__MEIO___280014A7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "MEIO_PAGTO_BOLETO",
+		"constraint_name" : "DF__GER_REVEN__MEIO___28F438E0",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "TIPO_CALC_IR_PEC",
+		"constraint_name" : "DF__GER_REVEN__TIPO___659332CC",
+		"definition" : "('I')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "TIPO_CALC_IR_SER",
+		"constraint_name" : "DF__GER_REVEN__TIPO___66875705",
+		"definition" : "('I')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "ARREDONDA_TRUNCA_IR",
+		"constraint_name" : "DF__GER_REVEN__ARRED__677B7B3E",
+		"definition" : "('A')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "GERA_LCTO_TRANSITORIO_IMPOSTOS",
+		"constraint_name" : "DF__GER_REVEN__GERA___40B6B3D8",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "HABILITA_BOTAO_ALTPAGTO",
+		"constraint_name" : "DF__GER_REVEN__HABIL__4C286684",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "ARREDONDA_TRUNCA_VLR_SERV",
+		"constraint_name" : "DF__GER_REVEN__ARRED__017B4463",
+		"definition" : "('A')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "ENVIA_REFORMA_NFSE",
+		"constraint_name" : "DF__GER_REVEN__ENVIA__12FAD620",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "TIPO_CALC_PCC_SER",
+		"constraint_name" : "DF__GER_REVEN__TIPO___35D9FE09",
+		"definition" : "('T')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "ARREDONDA_TRUNCA_PCC",
+		"constraint_name" : "DF__GER_REVEN__ARRED__36CE2242",
+		"definition" : "('T')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "OBR_COD_PART_LCTO_MAN",
+		"constraint_name" : "DF__GER_REVEN__OBR_C__13A4E196",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_REVENDA",
+		"column_name" : "IMPRIMIR_INFCOMPLEM_XML",
+		"constraint_name" : "DF__GER_REVEN__IMPRI__15581FDE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_SQL_AEXECUTAR",
+		"column_name" : "EXECUTA_MONOUSUARIO",
+		"constraint_name" : "DF__GER_SQL_A__EXECU__5665FDD5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_SQL_AEXECUTAR",
+		"column_name" : "ENVIOU_ERRO",
+		"constraint_name" : "DF__GER_SQL_A__ENVIO__575A220E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_SQL_AEXECUTAR",
+		"column_name" : "SQL_AJUSTADO",
+		"constraint_name" : "DF__GER_SQL_A__SQL_A__584E4647",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GER_USUARIO",
+		"column_name" : "BLOQUEADO",
+		"constraint_name" : "DF__GER_USUAR__BLOQU__5A5CB338",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMA_CONTRATO",
+		"column_name" : "IDT_REQUER_AUTORIZACAO",
+		"constraint_name" : "DF__GMA_CONTR__IDT_R__5552A962",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMA_PARAMETRO",
+		"column_name" : "BLOQUEAR_SOLIC_SEM_ORIGEM",
+		"constraint_name" : "DF__GMA_PARAM__BLOQU__0BCEB5A4",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMA_PARAMETRO_REVENDA",
+		"column_name" : "VISUALIZAR_POR_ALCADA",
+		"constraint_name" : "DF__GMA_PARAM__VISUA__7679CEF9",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMA_PARAMETRO_REVENDA",
+		"column_name" : "RATEIO_AUTOMATICO",
+		"constraint_name" : "DF__GMA_PARAM__RATEI__4290E1F6",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMA_PARAMETRO_REVENDA",
+		"column_name" : "APROVACAO_CONJUNTO_ALCADA",
+		"constraint_name" : "DF__GMA_PARAM__APROV__4D2777B5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMA_RATEIO_DESPESA",
+		"column_name" : "PERCENTUAL",
+		"constraint_name" : "DF__GMA_RATEI__PERCE__19A571AA",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMA_RATEIO_DESPESA",
+		"column_name" : "NAO_CALCULA_PISCOFINS",
+		"constraint_name" : "DF__GMA_RATEI__NAO_C__1A9995E3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMA_SOLICITACAO",
+		"column_name" : "TIPO_SOLICITACAO",
+		"constraint_name" : "DF__GMA_SOLIC__TIPO___1AE610AB",
+		"definition" : "('P')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMC_LEADS_ATUALIZACOES",
+		"column_name" : "ENVIADO",
+		"constraint_name" : "DF__GMC_LEADS__ENVIA__4EB5F662",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMC_PARAMETRO",
+		"column_name" : "UTILIZA_INTEGRACAO_CRM",
+		"constraint_name" : "DF__GMC_PARAM__UTILI__6A931B01",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMC_PARAMETRO",
+		"column_name" : "ENCAMINHAMENTO_LEADS",
+		"constraint_name" : "DF__GMC_PARAM__ENCAM__6B873F3A",
+		"definition" : "('D')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMC_PARAMETRO",
+		"column_name" : "CONTROLE_SU",
+		"constraint_name" : "DF__GMC_PARAM__CONTR__4D57BDD5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMC_PARAMETRO",
+		"column_name" : "DDS_AUTOMATICO_HOMOLOGACAO",
+		"constraint_name" : "DF__GMC_PARAM__DDS_A__3F2D92C2",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMC_PARAMETRO_PRECO",
+		"column_name" : "TIPO_CADASTRO_NCM",
+		"constraint_name" : "DF__GMC_PARAM__TIPO___0CB328DB",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "GMC_PARAMETRO_PRECO",
+		"column_name" : "BASE_PIS_COFINS",
+		"constraint_name" : "DF__GMC_PARAM__BASE___7A4A5FDD",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "HON_CHASSI_ALERTA",
+		"column_name" : "ALERTA_EFETUADO",
+		"constraint_name" : "DF__HON_CHASS__ALERT__6A0DCF26",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "HON_PARAMETRO",
+		"column_name" : "TODAS_FAMILIAS_INFOVENDAS",
+		"constraint_name" : "DF__HON_PARAM__TODAS__0599B4F3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "HON_PARAMETRO",
+		"column_name" : "SENSEDIA_HOMOLOG",
+		"constraint_name" : "DF__HON_PARAM__SENSE__0520ECBE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "HON_PARAMETRO",
+		"column_name" : "UTILIZA_DIGITAL_APPOINTMENT",
+		"constraint_name" : "DF__HON_PARAM__UTILI__2F17268A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "HPE_PARAMETRO",
+		"column_name" : "PROCESSOS_HPE",
+		"constraint_name" : "DF__HPE_PARAM__PROCE__42DA2F62",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "HPE_PARAMETRO",
+		"column_name" : "AMBIENTE_IVV_HOMOLOGACAO",
+		"constraint_name" : "DF__HPE_PARAM__AMBIE__4FCE0EDF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "HYU_PARAMETRO",
+		"column_name" : "INTEGRA_SAP_OS",
+		"constraint_name" : "DF__HYU_PARAM__INTEG__7E1AF0C1",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "HYU_PARAMETRO",
+		"column_name" : "INTEGRA_SAP_BDC",
+		"constraint_name" : "DF__HYU_PARAM__INTEG__67227CD0",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "HYU_PARAMETRO",
+		"column_name" : "INTEGRA_SAP_NFSE",
+		"constraint_name" : "DF__HYU_PARAM__INTEG__166AA8FA",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "HYU_PARAMETRO",
+		"column_name" : "QUOTA_ENV_OS",
+		"constraint_name" : "DF__HYU_PARAM__QUOTA__63FF24BE",
+		"definition" : "((20))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "IMP_GENERICA_LAYOUT",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__IMP_GENER__ATIVO__50E16352",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "ITC_PROCESSOS_FABRICA",
+		"column_name" : "CARGA_INICIAL_ENVIADA",
+		"constraint_name" : "DF__ITC_PROCE__CARGA__76DCEF08",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_GRUPO_PECAS",
+		"column_name" : "STATUS_ENVIO_JUNSOFT",
+		"constraint_name" : "DF__JUN_GRUPO__STATU__7B3F4F6D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_LOG",
+		"column_name" : "SUCESSO",
+		"constraint_name" : "DF__JUN_LOG__SUCESSO__65BA22A2",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_MOVIMENTO_ESTOQUE",
+		"column_name" : "TIPO_OPERACAO",
+		"constraint_name" : "DF__JUN_MOVIM__TIPO___7E1BBC18",
+		"definition" : "('E')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_MOVIMENTO_ESTOQUE",
+		"column_name" : "STATUS_ENVIO_JUNSOFT",
+		"constraint_name" : "DF__JUN_MOVIM__STATU__7F0FE051",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_MOVIMENTO_ESTOQUE",
+		"column_name" : "TIPO_MOVIMENTO",
+		"constraint_name" : "DF__JUN_MOVIM__TIPO___0004048A",
+		"definition" : "('C')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_NOTIFICACOES_USUARIO",
+		"column_name" : "NOT_CRIAR_OS",
+		"constraint_name" : "DF__JUN_NOTIF__NOT_C__07A52652",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_NOTIFICACOES_USUARIO",
+		"column_name" : "NOT_ALTERAR_OS",
+		"constraint_name" : "DF__JUN_NOTIF__NOT_A__08994A8B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_NOTIFICACOES_USUARIO",
+		"column_name" : "NOT_CRIAR_CLIENTE",
+		"constraint_name" : "DF__JUN_NOTIF__NOT_C__098D6EC4",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_NOTIFICACOES_USUARIO",
+		"column_name" : "NOT_ALTERAR_CLIENTE",
+		"constraint_name" : "DF__JUN_NOTIF__NOT_A__0A8192FD",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_NOTIFICACOES_USUARIO",
+		"column_name" : "NOT_NOTAS_RECEPCAO",
+		"constraint_name" : "DF__JUN_NOTIF__NOT_N__0B75B736",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_NOTIFICACOES_USUARIO",
+		"column_name" : "NOT_NOTAS_DEVOLUCAO",
+		"constraint_name" : "DF__JUN_NOTIF__NOT_N__0C69DB6F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_PARAMETRO",
+		"column_name" : "ESTOQUE_INICIAL_ENVIADO",
+		"constraint_name" : "DF__JUN_PARAM__ESTOQ__795706FB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_PARAMETRO",
+		"column_name" : "PEDIDO_DETALHADO",
+		"constraint_name" : "DF__JUN_PARAM__PEDID__08BC7378",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_PEDIDO_CAPA",
+		"column_name" : "STATUS_ENVIO_JUNSOFT",
+		"constraint_name" : "DF__JUN_PEDID__STATU__01EC4CFC",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_PEDIDO_CAPA",
+		"column_name" : "STATUS_PEDIDO_JUNSOFT",
+		"constraint_name" : "DF__JUN_PEDID__STATU__1316D8FE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_PEDIDO_CAPA",
+		"column_name" : "STATUS_ENVIO_NF_EMIT_JUNSOFT",
+		"constraint_name" : "DF__JUN_PEDID__STATU__474EA2CE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_PEDIDO_CAPA",
+		"column_name" : "STATUS_ENVIO_NF_CANC_JUNSOFT",
+		"constraint_name" : "DF__JUN_PEDID__STATU__4842C707",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "JUN_PEDIDO_NF",
+		"column_name" : "TIPO_NOTA",
+		"constraint_name" : "DF__JUN_PEDID__TIPO___04C8B9A7",
+		"definition" : "('R')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "KAW_PARAMETROS",
+		"column_name" : "API_INTEGRACAO_KAW_ATIVA",
+		"constraint_name" : "DF__KAW_PARAM__API_I__77C7BCF7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "KAW_PARAMETROS",
+		"column_name" : "API_INTEGRACAO_RECALL_ATIVA",
+		"constraint_name" : "DF__KAW_PARAM__API_I__78BBE130",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "KAW_PARAMETROS",
+		"column_name" : "API_INTEGRA_SERV_RECALL_ATIVA",
+		"constraint_name" : "DF__KAW_PARAM__API_I__79B00569",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "LOC_CONTRATO_MODELO",
+		"column_name" : "VAL_COMISSAO",
+		"constraint_name" : "DF__LOC_CONTR__VAL_C__4A0EDAD1",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "LOC_PARAMETRO",
+		"column_name" : "CALCULA_IRRF",
+		"constraint_name" : "DF__LOC_PARAM__CALCU__3945D830",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "LOC_PARAMETRO",
+		"column_name" : "CALCULA_30DIAS",
+		"constraint_name" : "DF__LOC_PARAM__CALCU__3A39FC69",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "LOC_PARAMETRO",
+		"column_name" : "TIPO_CALCULO_IRRF",
+		"constraint_name" : "DF__LOC_PARAM__TIPO___1A3C0535",
+		"definition" : "('I')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "LOC_TIPO_LANCAMENTO",
+		"column_name" : "CALCULA_PCC",
+		"constraint_name" : "DF__LOC_TIPO___CALCU__3851B3F7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MBB_KPI_FABRICA",
+		"column_name" : "INATIVO",
+		"constraint_name" : "DF__MBB_KPI_F__INATI__64461025",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MBB_PARAMETRO",
+		"column_name" : "UTILIZA_XENTRY",
+		"constraint_name" : "DF__MBB_PARAM__UTILI__3E0A8D4D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MBB_PARAMETRO",
+		"column_name" : "ENVIA_PRECOS",
+		"constraint_name" : "DF__MBB_PARAM__ENVIA__3EFEB186",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MBB_PARAMETRO",
+		"column_name" : "ENVIA_DADOS_CLIENTE",
+		"constraint_name" : "DF__MBB_PARAM__ENVIA__3FF2D5BF",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MBB_PARAMETRO",
+		"column_name" : "UTILIZA_PORTAL_CLIENTES",
+		"constraint_name" : "DF__MBB_PARAM__UTILI__23B7551B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MBB_PARAMETRO",
+		"column_name" : "GRAVAR_LOG_PORTAL_CLIENTES",
+		"constraint_name" : "DF__MBB_PARAM__GRAVA__2086AE0C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MBB_PARAMETRO",
+		"column_name" : "CALCULO_MOBILIDADE_GRAU_AT",
+		"constraint_name" : "DF__MBB_PARAM__CALCU__317C2FE4",
+		"definition" : "('P')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MBB_PARAMETRO",
+		"column_name" : "ATUALIZA_PRECOS_POR_EMPRESAS",
+		"constraint_name" : "DF__MBB_PARAM__ATUAL__0B78E492",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MBB_PARAMETRO",
+		"column_name" : "DET_ORIGEM_PELO_CST",
+		"constraint_name" : "DF__MBB_PARAM__DET_O__0D612D04",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MBB_PARAMETRO",
+		"column_name" : "ENVIO_PESQUISA_MBCV_ATIVA",
+		"constraint_name" : "DF__MBB_PARAM__ENVIO__4B7E5B0E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MBB_PORTAL_CLIENTES_LOG",
+		"column_name" : "SUCESSO",
+		"constraint_name" : "DF__MBB_PORTA__SUCES__16091F99",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MCC_REGRA_OFICINA",
+		"column_name" : "CONSIDERAR_VAL_LIQUIDO_PECA",
+		"constraint_name" : "DF__MCC_REGRA__CONSI__63DFF484",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MCC_REGRA_OFICINA",
+		"column_name" : "CONSIDERAR_VAL_LIQUIDO_SERVICO",
+		"constraint_name" : "DF__MCC_REGRA__CONSI__64D418BD",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MDFEPAGFRETE",
+		"column_name" : "VADIANT",
+		"constraint_name" : "DF__MDFEPAGFR__VADIA__34589C8F",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MOB_CATEGORIA_CHECKOUT",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__MOB_CATEG__ATIVO__21882142",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MOB_CHECKLIST_CATEGORIA",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__MOB_CHECK__ATIVO__39DECDC0",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MOB_CHECKLIST_MEC_ITEM",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__MOB_CHECK__ATIVO__0408D441",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MOB_CHECKLIST_MEC_PASSO",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__MOB_CHECK__ATIVO__02208BCF",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MOB_FOTO_CAPA",
+		"column_name" : "VIDEO",
+		"constraint_name" : "DF__MOB_FOTO___VIDEO__6D8F833D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MOB_ITEM_CHECKLIST",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__MOB_ITEM___ATIVO__45151B8A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MOB_ITEM_CHECKOUT",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__MOB_ITEM___ATIVO__237069B4",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MOB_PARTE_VEICULO",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__MOB_PARTE__ATIVO__10A54BFE",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MOB_TIPO_VEICULO",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__MOB_TIPO___ATIVO__0BE096E1",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MOB_TIPO_VEICULO",
+		"column_name" : "ESTRUTURA",
+		"constraint_name" : "DF__MOB_TIPO___ESTRU__0CD4BB1A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MOB_VISAO_VEICULO",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__MOB_VISAO__ATIVO__0EBD038C",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "MOV_PARAMETROS",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__MOV_PARAM__ATIVO__77DC0039",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NFE_DMSMENSAGEM",
+		"column_name" : "NROCONSULTA",
+		"constraint_name" : "DF__NFE_DMSME__NROCO__4E9E85C4",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NFE_WINSERVER",
+		"column_name" : "CONINTERNET",
+		"constraint_name" : "DF__NFE_WINSE__CONIN__554B8353",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_DCL_PARAMETRO",
+		"column_name" : "NIS_DCL_PORT",
+		"constraint_name" : "DF__NIS_DCL_P__NIS_D__0A2598FD",
+		"definition" : "((22))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_DI_PARAMETRO_PECAS_NFE",
+		"column_name" : "CODIGO_COM_COR",
+		"constraint_name" : "DF__NIS_DI_PA__CODIG__540FA85C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_DI_PARAMETRO_PECAS_NFE",
+		"column_name" : "REMOVE_ZERO_ESQUERDA",
+		"constraint_name" : "DF__NIS_DI_PA__REMOV__5503CC95",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_DI_PARAMETRO_PECAS_NFE",
+		"column_name" : "REMOVE_ESPACOS",
+		"constraint_name" : "DF__NIS_DI_PA__REMOV__55F7F0CE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_DI_PARAMETRO_PECAS_NFE",
+		"column_name" : "REMOVE_BARRAS",
+		"constraint_name" : "DF__NIS_DI_PA__REMOV__56EC1507",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_DI_PARAMETRO_PECAS_NFE",
+		"column_name" : "REMOVE_PONTOS",
+		"constraint_name" : "DF__NIS_DI_PA__REMOV__57E03940",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_DI_PARAMETRO_PECAS_NFE",
+		"column_name" : "REMOVE_HIFEN",
+		"constraint_name" : "DF__NIS_DI_PA__REMOV__58D45D79",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_DI_PARAMETRO_PECAS_NFE",
+		"column_name" : "REMOVE_PREFIXO_SUFIXO",
+		"constraint_name" : "DF__NIS_DI_PA__REMOV__59C881B2",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_DI_PARAMETRO_PECAS_NFE",
+		"column_name" : "ACRESCENTA_PREFIXO_SUFIXO",
+		"constraint_name" : "DF__NIS_DI_PA__ACRES__5ABCA5EB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_DI_PARAMETRO_PECAS_NFE",
+		"column_name" : "ASSOCIAR_ITENS_PEDIDO",
+		"constraint_name" : "DF__NIS_DI_PA__ASSOC__5BB0CA24",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_PARAMETRO",
+		"column_name" : "MULTIPLAS_SOLICITACOES_SIN",
+		"constraint_name" : "DF__NIS_PARAM__MULTI__66760F55",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "NIS_PARAMETRO",
+		"column_name" : "BLOQUEIO_BIRCAR",
+		"constraint_name" : "DF__NIS_PARAM__BLOQU__51284EB9",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_ATENDIMENTO",
+		"column_name" : "CONTATO_BOUTIQUE",
+		"constraint_name" : "DF__OFI_ATEND__CONTA__03124E03",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_ATENDIMENTO",
+		"column_name" : "AGENDAMENTO_FLYCHAT",
+		"constraint_name" : "DF__OFI_ATEND__AGEND__167C8A37",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_ATENDIMENTO",
+		"column_name" : "ATENDIMENTO_ENVIADO_FORD",
+		"constraint_name" : "DF__OFI_ATEND__ATEND__47ECF5F5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_ATENDIMENTO",
+		"column_name" : "AGENDA_BYD",
+		"constraint_name" : "DF__OFI_ATEND__AGEND__02E469E8",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_BOLSOES_TOYOTA",
+		"column_name" : "AD_LQS",
+		"constraint_name" : "DF__OFI_BOLSO__AD_LQ__56D7066E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_BOLSOES_TOYOTA",
+		"column_name" : "TIPO_RE",
+		"constraint_name" : "DF__OFI_BOLSO__TIPO___57CB2AA7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CATEGORIA_SERVICO",
+		"column_name" : "PERMITE_ALTERAR_VALOR",
+		"constraint_name" : "DF__OFI_CATEG__PERMI__25DDFE01",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CATEGORIA_SERVICO",
+		"column_name" : "PERMITE_ALTERAR_TEMPO",
+		"constraint_name" : "DF__OFI_CATEG__PERMI__26D2223A",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CESTA_TOPMOTIVE_CAPA",
+		"column_name" : "QUANTIDADE_PECAS",
+		"constraint_name" : "DF__OFI_CESTA__QUANT__6D5B446A",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CESTA_TOPMOTIVE_CAPA",
+		"column_name" : "VALOR_TOTAL_PECAS",
+		"constraint_name" : "DF__OFI_CESTA__VALOR__6E4F68A3",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CESTA_TOPMOTIVE_CAPA",
+		"column_name" : "QUANTIDADE_SERVICOS",
+		"constraint_name" : "DF__OFI_CESTA__QUANT__6F438CDC",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CESTA_TOPMOTIVE_CAPA",
+		"column_name" : "VALOR_TOTAL_SERVICOS",
+		"constraint_name" : "DF__OFI_CESTA__VALOR__7037B115",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CESTA_TOPMOTIVE_CAPA",
+		"column_name" : "VALOR_TOTAL_CESTA",
+		"constraint_name" : "DF__OFI_CESTA__VALOR__712BD54E",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CESTA_TOPMOTIVE_CAPA",
+		"column_name" : "SITUACAO",
+		"constraint_name" : "DF__OFI_CESTA__SITUA__721FF987",
+		"definition" : "('1')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CESTA_TOPMOTIVE_CAPA",
+		"column_name" : "ORIGEM_TOPMOTIVE",
+		"constraint_name" : "DF__OFI_CESTA__ORIGE__73141DC0",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CESTA_TOPMOTIVE_PECAS",
+		"column_name" : "SITUACAO",
+		"constraint_name" : "DF__OFI_CESTA__SITUA__7C9D87FA",
+		"definition" : "('1')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CESTA_TOPMOTIVE_SERVICOS",
+		"column_name" : "SITUACAO",
+		"constraint_name" : "DF__OFI_CESTA__SITUA__043EA9C2",
+		"definition" : "('1')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CHK_CHECKLIST",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__OFI_CHK_C__ATIVO__09B9EDFB",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CHK_CHECKLIST",
+		"column_name" : "OBRIGATORIO_OS",
+		"constraint_name" : "DF__OFI_CHK_C__OBRIG__0AAE1234",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CHK_LANCAMENTO",
+		"column_name" : "STATUS",
+		"constraint_name" : "DF__OFI_CHK_L__STATU__0BA2366D",
+		"definition" : "('A')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CICLO_TAB_PERIODICOS",
+		"column_name" : "REVISAO_RESETA_DATA",
+		"constraint_name" : "DF__OFI_CICLO__REVIS__7896563E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_CICLO_TAB_PERIODICOS_ITENS",
+		"column_name" : "GRUPO_MANUTENCAO",
+		"constraint_name" : "DF__OFI_CICLO__GRUPO__1C69A260",
+		"definition" : "((2))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_FICHA_SEGUIMENTO",
+		"column_name" : "KM_ATUAL",
+		"constraint_name" : "DF__OFI_FICHA__KM_AT__4E697B9A",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_FICHA_SEGUIMENTO",
+		"column_name" : "TIPO_PERIODICO",
+		"constraint_name" : "DF__OFI_FICHA__TIPO___4F5D9FD3",
+		"definition" : "('T')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_FICHA_SEGUIMENTO",
+		"column_name" : "REVISAO_ANTECIPADA",
+		"constraint_name" : "DF__OFI_FICHA__REVIS__5C44FBAA",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_FICHA_SEGUIMENTO",
+		"column_name" : "ENVIADO_DATALAKE",
+		"constraint_name" : "DF__OFI_FICHA__ENVIA__67B6AE56",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_FICHA_SEGUIMENTO",
+		"column_name" : "SPMC",
+		"constraint_name" : "DF__OFI_FICHA___SPMC__5404BB64",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_FICHA_SEGUIMENTO",
+		"column_name" : "VEICULO_BLINDADO",
+		"constraint_name" : "DF__OFI_FICHA__VEICU__6816A109",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_FICHA_SEGUIMENTO",
+		"column_name" : "VEICULO_MODIFICADO",
+		"constraint_name" : "DF__OFI_FICHA__VEICU__690AC542",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_FICHA_SEGUIMENTO",
+		"column_name" : "VEI_INACABADO",
+		"constraint_name" : "DF__OFI_FICHA__VEI_I__01849AAD",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_FICHA_SEGUIMENTO",
+		"column_name" : "VEICULO_MONTADORA",
+		"constraint_name" : "DF__OFI_FICHA__VEICU__65F3257F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_MAODEOBRA",
+		"column_name" : "ENVIADO_DATALAKE",
+		"constraint_name" : "DF__OFI_MAODE__ENVIA__68AAD28F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_MAODEOBRA",
+		"column_name" : "GERA_CHIP_TOYOTA",
+		"constraint_name" : "DF__OFI_MAODE__GERA___4028AB40",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_MAODEOBRA",
+		"column_name" : "COS_REVISAO",
+		"constraint_name" : "DF__OFI_MAODE__COS_R__287C0A38",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_MAODEOBRA",
+		"column_name" : "ENVIA_OSS_GM",
+		"constraint_name" : "DF__OFI_MAODE__ENVIA__2D40BF55",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_MOVIMENTO_FERRAMENTA",
+		"column_name" : "COND_FERRAMENTA",
+		"constraint_name" : "DF__OFI_MOVIM__COND___66DB9169",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_ORDEM_SERVICO",
+		"column_name" : "CORTESIA_ILS",
+		"constraint_name" : "DF__OFI_ORDEM__CORTE__10373EF7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_ORDEM_SERVICO",
+		"column_name" : "GARANTIA_BALCAO_ILS",
+		"constraint_name" : "DF__OFI_ORDEM__GARAN__1313ABA2",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_ORDEM_SERVICO",
+		"column_name" : "VEICULO_IMOBILIZADO",
+		"constraint_name" : "DF__OFI_ORDEM__VEICU__69FEE97B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_ORDEM_SERVICO",
+		"column_name" : "OS_SAIDA_IVECO_IMPRESSA",
+		"constraint_name" : "DF__OFI_ORDEM__OS_SA__14826088",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "AGENDA_DIAS_LEMBRAR",
+		"constraint_name" : "DF__OFI_PARAM__AGEND__55D59338",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "AGENDA_DIAS_PREAGENDA",
+		"constraint_name" : "DF__OFI_PARAM__AGEND__56C9B771",
+		"definition" : "((5))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "AGENDA_DIAS_TOLER_PRE",
+		"constraint_name" : "DF__OFI_PARAM__AGEND__57BDDBAA",
+		"definition" : "((7))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "AGENDA_DIAS_TOLER_LEM",
+		"constraint_name" : "DF__OFI_PARAM__AGEND__58B1FFE3",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "UTILIZA_CHECKIN",
+		"constraint_name" : "DF__OFI_PARAM__UTILI__5F5EFD72",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "TELA_AGENDAMENTO_OFICINA",
+		"constraint_name" : "DF__OFI_PARAM__TELA___6DAD1CC9",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "GERAR_CONTATO_NAO_COMPARECEU",
+		"constraint_name" : "DF__OFI_PARAM__GERAR__745A1A58",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "FLUXO_OFICINA_TIPO_TELA",
+		"constraint_name" : "DF__OFI_PARAM__FLUXO__7FCBCD04",
+		"definition" : "('I')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "TEMPO_MINIMO_AGENDA_MECANICO",
+		"constraint_name" : "DF__OFI_PARAM__TEMPO__6089C283",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "GERA_ORCAMENTO_PRE_OS",
+		"constraint_name" : "DF__OFI_PARAM__GERA___13D45C5F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "AGE_OUTLOOK_PERMITE_AGE_NC",
+		"constraint_name" : "DF__OFI_PARAM__AGE_O__57555E04",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "INF_MOTIVO_NAO_APROVACAO",
+		"constraint_name" : "DF__OFI_PARAM__INF_M__562C2FA1",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "TIPO_RENTABILIDADE",
+		"constraint_name" : "DF__OFI_PARAM__TIPO___0B5F11EF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "OBRIGA_INFORMAR_DRG",
+		"constraint_name" : "DF__OFI_PARAM__OBRIG__29AE8EE5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "INFORMAR_MOTIVO_CANCELAR_OS",
+		"constraint_name" : "DF__OFI_PARAM__INFOR__15728C0E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "MOB_UTILIZA_CHECKIN_PDF",
+		"constraint_name" : "DF__OFI_PARAM__MOB_U__1B2B6564",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "BLOQUEAR_OS_SEMTIPO",
+		"constraint_name" : "DF__OFI_PARAM__BLOQU__2FF17820",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "VERIFICAR_CREDITO_COM_ORC",
+		"constraint_name" : "DF__OFI_PARAM__VERIF__32CDE4CB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "VERIFICAR_LIMITE_CREDITO",
+		"constraint_name" : "DF__OFI_PARAM__VERIF__33C20904",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "VERIFICAR_LIMITE_LANCAR_ITEM",
+		"constraint_name" : "DF__OFI_PARAM__VERIF__3298DAA1",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "REGISTRAR_VP_REMOVER_ITEM_OS",
+		"constraint_name" : "DF__OFI_PARAM__REGIS__375D8FBE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "ATUALIZAR_ITEM_PENDENTE",
+		"constraint_name" : "DF__OFI_PARAM__ATUAL__2AC2AEAF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "OBRIGA_CGC_TIPOFROTA",
+		"constraint_name" : "DF__OFI_PARAM__OBRIG__46AAC046",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "IMPRIMIR_OS_PSA_EM_BRANCO",
+		"constraint_name" : "DF__OFI_PARAM__IMPRI__7C32A84F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "VALOR_ACESSORIO_OS_INTERNA",
+		"constraint_name" : "DF__OFI_PARAM__VALOR__12ABF953",
+		"definition" : "('P')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "BLOQ_OS_SEM_TESTE",
+		"constraint_name" : "DF__OFI_PARAM__BLOQ___6BE731ED",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "NF_GAR_SEPAR_COM_SERV",
+		"constraint_name" : "OFIPAR_NFGARSEPCONSER_DF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "ENCAMINHAR_CONTATO_CONSULTOR",
+		"constraint_name" : "DF__OFI_PARAM__ENCAM__77CDE5E5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "BLOQ_OS_SEM_CQ",
+		"constraint_name" : "DF__OFI_PARAM__BLOQ___79B62E57",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "UTILIZA_MOT_CANC_PADRAO_PREOS",
+		"constraint_name" : "DF__OFI_PARAM__UTILI__7B9E76C9",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "ENCERRA_TODO_TIPO_OS",
+		"constraint_name" : "DF__OFI_PARAM__ENCER__40A89984",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "LIMITE_CREDITO_FINAL_OS",
+		"constraint_name" : "DF__OFI_PARAM__LIMIT__2BC421E5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "UTILIZA_GAR_RECALL",
+		"constraint_name" : "DF__OFI_PARAM__UTILI__238F99EE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "BLOQUEAR_ENC_OS_SEM_DEV_FERR",
+		"constraint_name" : "DF__OFI_PARAM__BLOQU__65E76D30",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "OBRIGA_CLIREV_VENDEU",
+		"constraint_name" : "DF__OFI_PARAM__OBRIG__109CC10B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "USA_CONSULTAOS_CUSTOM",
+		"constraint_name" : "DF__OFI_PARAM__USA_C__1285097D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "UTILIZA_MARKUP_SERV_TERC",
+		"constraint_name" : "DF__OFI_PARAM__UTILI__1971FE2E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "CONSISTE_VALOR_NF_REQ",
+		"constraint_name" : "DF__OFI_PARAM__CONSI__1A662267",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "UTILIZA_SERV_PADRAO",
+		"constraint_name" : "DF__OFI_PARAM__UTILI__62E0E353",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "IMPRIME_DESCR_SOLICITACAO_RPS",
+		"constraint_name" : "DF__OFI_PARAM__IMPRI__4CDC939B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "AGRUPAR_EXTERNA",
+		"constraint_name" : "DF__OFI_PARAM__AGRUP__63BFF8F3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "AGRUPAR_INTERNA",
+		"constraint_name" : "DF__OFI_PARAM__AGRUP__64B41D2C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "AGRUPAR_GARANTIA",
+		"constraint_name" : "DF__OFI_PARAM__AGRUP__65A84165",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "AGRUPAR_REVISAO",
+		"constraint_name" : "DF__OFI_PARAM__AGRUP__669C659E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "ENCERRAR_OS_POR_SOLICITACAO",
+		"constraint_name" : "DF__OFI_PARAM__ENCER__6EC7974B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "AUTOSHOP_ESTOQUE_ZERO",
+		"constraint_name" : "DF__OFI_PARAM__AUTOS__3B12E91B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "PERMITE_PECA_PARALELA_GAR",
+		"constraint_name" : "DF__OFI_PARAM__PERMI__7357423E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "RETER_IR_GAR_PC",
+		"constraint_name" : "DF__OFI_PARAM__RETER__77B1E307",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "TRANSF_ITEM_SEM_VERIF_CHASSI",
+		"constraint_name" : "DF__OFI_PARAM__TRANS__2598A948",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "RESERVA_HORARIO_NAO_COMPARECEU",
+		"constraint_name" : "DF__OFI_PARAM__RESER__79851CE0",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "UTILIZA_CHECKLIST_ENTREGA",
+		"constraint_name" : "DF__OFI_PARAM__UTILI__4A2B0F79",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "UTILIZA_CAUSA_REPARO",
+		"constraint_name" : "DF__OFI_PARAM__UTILI__5E320826",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "IMPRIMIR_LAUDO_OUTROS_TIPOS_OS",
+		"constraint_name" : "DF__OFI_PARAM__IMPRI__79A51871",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO",
+		"column_name" : "BLOQ_PREP_TRANS_N_ENTRADA",
+		"constraint_name" : "DF__OFI_PARAM__BLOQ___1C3A2797",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO_CDT",
+		"column_name" : "PERC_MIN_TRAB_OS_GAR",
+		"constraint_name" : "DF__OFI_PARAM__PERC___3C2244DB",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO_CDT",
+		"column_name" : "INSERE_CHIP_AGENDAMENTO",
+		"constraint_name" : "DF__OFI_PARAM__INSER__19F055C4",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARAMETRO_CDT",
+		"column_name" : "USA_RATEIO_MULT_SERV",
+		"constraint_name" : "DF__OFI_PARAM__USA_R__2B4695A6",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PARCEIRO_OS",
+		"column_name" : "INDTOT",
+		"constraint_name" : "DF__OFI_PARCE__INDTO__4EDAB5FD",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PECA_OS",
+		"column_name" : "INDTOT",
+		"constraint_name" : "DF__OFI_PECA___INDTO__06350C88",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PECA_SOLICITADA",
+		"column_name" : "FORD_ORIGEM_STF",
+		"constraint_name" : "DF__OFI_PECA___FORD___4BBD86D9",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PECA_SOLICITADA",
+		"column_name" : "FORD_BLOCO_SERV_TRANSF",
+		"constraint_name" : "DF__OFI_PECA___FORD___4DA5CF4B",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PECA_SOLICITADA",
+		"column_name" : "FORD_TIPO_SERV_TRANSF",
+		"constraint_name" : "DF__OFI_PECA___FORD___4F8E17BD",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PECA_SOLICITADA",
+		"column_name" : "INDTOT",
+		"constraint_name" : "DF__OFI_PECA___INDTO__072930C1",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PROGRAMACAO_OFICINA",
+		"column_name" : "TIPO_RE",
+		"constraint_name" : "DF__OFI_PROGR__TIPO___53FA99C3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PROGRAMACAO_OFICINA",
+		"column_name" : "AD_LQS",
+		"constraint_name" : "DF__OFI_PROGR__AD_LQ__55E2E235",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_PROMOCAO",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__OFI_PROMO__ATIVO__236ED306",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_REVISAO_SERVICO",
+		"column_name" : "CONSIDERA_CLASSIFICAO_VEICULO",
+		"constraint_name" : "DF__OFI_REVIS__CONSI__798A7A77",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SERVICO",
+		"column_name" : "ENVIADO_DATALAKE",
+		"constraint_name" : "DF__OFI_SERVI__ENVIA__699EF6C8",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SERVICO",
+		"column_name" : "TRIBUTA_SERVICO_DE_PCC",
+		"constraint_name" : "DF__OFI_SERVI__TRIBU__0E5223E1",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SERVICO",
+		"column_name" : "TRIBUTA_SERVICO_DE_IR",
+		"constraint_name" : "DF__OFI_SERVI__TRIBU__0163086E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SERVICO_MODELO_VEICULO",
+		"column_name" : "DATA_INCLUSAO",
+		"constraint_name" : "DF__OFI_SERVI__DATA___5B209151",
+		"definition" : "(getdate())"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SERVICO_SOLICITADO",
+		"column_name" : "FORD_ORIGEM_STF",
+		"constraint_name" : "DF__OFI_SERVI__FORD___4CB1AB12",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SERVICO_SOLICITADO",
+		"column_name" : "FORD_BLOCO_SERV_TRANSF",
+		"constraint_name" : "DF__OFI_SERVI__FORD___4E99F384",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SERVICO_SOLICITADO",
+		"column_name" : "FORD_TIPO_SERV_TRANSF",
+		"constraint_name" : "DF__OFI_SERVI__FORD___50823BF6",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SOLICITACAO",
+		"column_name" : "GAR_RECALL_FCA",
+		"constraint_name" : "DF__OFI_SOLIC__GAR_R__5310972B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SOLICITACAO",
+		"column_name" : "RECLAME_CLIENTE_RENAULT",
+		"constraint_name" : "OFISOL_RECCLIREN_DEF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SOLICITACAO",
+		"column_name" : "SOLIC_AGENDADO",
+		"constraint_name" : "DF__OFI_SOLIC__SOLIC__1F9289D3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SOLICITACAO",
+		"column_name" : "PSA_FF_TIPO",
+		"constraint_name" : "DF__OFI_SOLIC__PSA_F__27F39101",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SOLICITACAO",
+		"column_name" : "FORD_BLOCO_SERV_TRANSF",
+		"constraint_name" : "DF__OFI_SOLIC__FORD___48E11A2E",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SOLICITACAO",
+		"column_name" : "FORD_TIPO_SERV_TRANSF",
+		"constraint_name" : "DF__OFI_SOLIC__FORD___49D53E67",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SOLICITACAO",
+		"column_name" : "BLOQUEAR_TIPO_SOLICITACAO",
+		"constraint_name" : "DF__OFI_SOLIC__BLOQU__4AC962A0",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SOLICITACAO",
+		"column_name" : "SOLICITACAO_SERV_PADRAO",
+		"constraint_name" : "DF__OFI_SOLIC__SOLIC__61ECBF1A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SOLICITACAO",
+		"column_name" : "SITUACAO_NF",
+		"constraint_name" : "DF__OFI_SOLIC__SITUA__0C57FA32",
+		"definition" : "('A')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_SOLICITACAO",
+		"column_name" : "APROVACAO_QUALIDADE",
+		"constraint_name" : "DF__OFI_SOLIC__APROV__158D2A08",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_TIPO_SERVICO",
+		"column_name" : "PADRAO_REVISOES",
+		"constraint_name" : "DF__OFI_TIPO___PADRA__6B8FCA2D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_TIPO_SERVICO",
+		"column_name" : "EH_SERVICO_REVISAO",
+		"constraint_name" : "DF__OFI_TIPO___EH_SE__6F605B11",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_TIPO_SERVICO",
+		"column_name" : "TRIBUTA_IR",
+		"constraint_name" : "DF__OFI_TIPO___TRIBU__034B50E0",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_TIPO_SERVICO",
+		"column_name" : "SCA_CONTRATO_MANUTENCAO",
+		"constraint_name" : "DF__OFI_TIPO___SCA_C__3A28E683",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_TIPO_SERVICO",
+		"column_name" : "SOMENTE_ORGAO_PUBLICO",
+		"constraint_name" : "DF__OFI_TIPO___SOMEN__0AEED4AD",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_TIPO_SERVICO",
+		"column_name" : "TRIBUTA_ISSQN",
+		"constraint_name" : "DF__OFI_TIPO___TRIBU__50AD247F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "OFI_TIPO_SERVICO",
+		"column_name" : "ENVIA_INDECX_MBB",
+		"constraint_name" : "DF__OFI_TIPO___ENVIA__4590778E",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_CARREGAMENTO",
+		"column_name" : "SITUACAO",
+		"constraint_name" : "DF__PEC_CARRE__SITUA__40AC9237",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_CLASS_FISCAL",
+		"column_name" : "COD_SEGMENTO_NCM",
+		"constraint_name" : "DF__PEC_CLASS__COD_S__50342A80",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ESTRATEGIA_EXPEDICAO_WMS",
+		"column_name" : "PADRAO_OFICINA",
+		"constraint_name" : "DF__PEC_ESTRA__PADRA__7AB60ADF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_FABRICANTE",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__PEC_FABRI__ATIVO__1BC1F8EF",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_GRUPO",
+		"column_name" : "CONSIDERAR_TRANSF_ENTRADA",
+		"constraint_name" : "DF__PEC_GRUPO__CONSI__070A0087",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_GRUPOS_INTEGRADOS",
+		"column_name" : "INTEGRADO",
+		"constraint_name" : "DF__PEC_GRUPO__INTEG__767CFC55",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES",
+		"column_name" : "ACTIVE",
+		"constraint_name" : "DF__PEC_INTEG__ACTIV__71B84738",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES",
+		"column_name" : "SKU_EMP_REV",
+		"constraint_name" : "DF__PEC_INTEG__SKU_E__3F77AB85",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES",
+		"column_name" : "SKU_ITEM_INTERNO",
+		"constraint_name" : "DF__PEC_INTEG__SKU_I__406BCFBE",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES",
+		"column_name" : "SKU_ZEROS_ESQ",
+		"constraint_name" : "DF__PEC_INTEG__SKU_Z__028E98D6",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES",
+		"column_name" : "EMISSAO_NOTA_AUTO",
+		"constraint_name" : "DF__PEC_INTEG__EMISS__1C045216",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES_CONTROLE",
+		"column_name" : "STATUS",
+		"constraint_name" : "DF__PEC_INTEG__STATU__349008BE",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES_CONTROLE",
+		"column_name" : "NRO_TENTATIVAS",
+		"constraint_name" : "DF__PEC_INTEG__NRO_T__35842CF7",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES_CONTROLE",
+		"column_name" : "ACK_ENVIADO",
+		"constraint_name" : "DF__PEC_INTEG__ACK_E__065F29BA",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES_FILA",
+		"column_name" : "INBOUND",
+		"constraint_name" : "PECINTFIL_INBOUND_DF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES_FILA",
+		"column_name" : "OUTBOUND",
+		"constraint_name" : "PECINTFIL_OUTBOUND_DF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES_FILA",
+		"column_name" : "FEEDBACK",
+		"constraint_name" : "PECINTFIL_FEEDBACK_DF",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_INTEGRACOES_FILA",
+		"column_name" : "QTD_REGISTRO_PAGINACAO",
+		"constraint_name" : "DF__PEC_INTEG__QTD_R__2D2EDE18",
+		"definition" : "((500))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_ESTOQUE",
+		"column_name" : "PRE_SEL_INVENTARIO",
+		"constraint_name" : "DF__PEC_ITEM___PRE_S__10ADD6F1",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_ESTOQUE",
+		"column_name" : "ENVIADO_DATALAKE",
+		"constraint_name" : "DF__PEC_ITEM___ENVIA__64DA41AB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_ESTOQUE",
+		"column_name" : "COD_SEGMENTO_NCM",
+		"constraint_name" : "DF__PEC_ITEM___COD_S__4F400647",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_ESTOQUE",
+		"column_name" : "CALCULA_PIS_COFINS_ST_NAOMONOF",
+		"constraint_name" : "DF__PEC_ITEM___CALCU__28E7B53A",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_ESTOQUE",
+		"column_name" : "IGNORAR_TRIGGER",
+		"constraint_name" : "DF__PEC_ITEM___IGNOR__7C5505E5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_ESTOQUE",
+		"column_name" : "BLOQUEAR_COMPRA",
+		"constraint_name" : "DF__PEC_ITEM___BLOQU__3BC71632",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_ESTOQUE_ATTRIBUTES",
+		"column_name" : "FORMATO",
+		"constraint_name" : "DF__PEC_ITEM___FORMA__1EFF23A4",
+		"definition" : "('TEXT')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_MODELO",
+		"column_name" : "DATA_INCLUSAO",
+		"constraint_name" : "DF__PEC_ITEM___DATA___593848DF",
+		"definition" : "(getdate())"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_REVENDA",
+		"column_name" : "QTD_BOUTIQUE",
+		"constraint_name" : "DF__PEC_ITEM___QTD_B__27A4B434",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_REVENDA",
+		"column_name" : "QTD_NEGOCIACAO_BOUTIQUE",
+		"constraint_name" : "DF__PEC_ITEM___QTD_N__2898D86D",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_ITEM_REVENDA",
+		"column_name" : "ENVIADO_DATALAKE",
+		"constraint_name" : "DF__PEC_ITEM___ENVIA__65CE65E4",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_KIT",
+		"column_name" : "KIT_ATIVO",
+		"constraint_name" : "DF__PEC_KIT__KIT_ATI__3039FA35",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_KIT",
+		"column_name" : "MULTIPLOS_MODELOS",
+		"constraint_name" : "DF__PEC_KIT__MULTIPL__22E72526",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_KIT",
+		"column_name" : "AUTO_BUSCA",
+		"constraint_name" : "DF__PEC_KIT__AUTO_BU__2D64B399",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_KITS_INTEGRADOS",
+		"column_name" : "INTEGRADO",
+		"constraint_name" : "DF__PEC_KITS___INTEG__7494B3E3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_MASTER_ITEM_ESTOQUE",
+		"column_name" : "SITUACAO",
+		"constraint_name" : "DF__PEC_MASTE__SITUA__7E14C7D3",
+		"definition" : "('A')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_MASTER_ITEM_ESTOQUE",
+		"column_name" : "BLOQUEAR_COMPRA",
+		"constraint_name" : "DF__PEC_MASTE__BLOQU__4877D131",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PAR_GEST_DESCARTE",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__PEC_PAR_G__ATIVO__219D2FDB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "BLOQUEAR_CLIENTE_SEM_CREDITO",
+		"constraint_name" : "DF__PEC_PARAM__BLOQU__50A6C9C7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "CONSIDERAR_FRETE_DEST_RENT",
+		"constraint_name" : "DF__PEC_PARAM__CONSI__519AEE00",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "CONTROLA_ESTOQUE_BOUTIQUE",
+		"constraint_name" : "DF__PEC_PARAM__CONTR__678A2F1F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "REPOSICAO_MARCA_GRUPO",
+		"constraint_name" : "DF__PEC_PARAM__REPOS__6B5AC003",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "ACERTA_ESTOQUE_MES_ATUAL",
+		"constraint_name" : "DF__PEC_PARAM__ACERT__5FFFB29E",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "BLOQ_SIMUL_DESCONTO_ACIMA",
+		"constraint_name" : "DF__PEC_PARAM__BLOQ___77A23205",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "CONSIDERAR_FRETE_EMIT_RENT",
+		"constraint_name" : "DF__PEC_PARAM__CONSI__57F47C82",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "GRAVAR_VAL_ADIC_AUT_CONDPAGTO",
+		"constraint_name" : "DF__PEC_PARAM__GRAVA__58E8A0BB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "USA_PRECO_MARKUP_ETKA",
+		"constraint_name" : "DF__PEC_PARAM__USA_P__5EA17A11",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "BLOQ_ITENS_CANCELADOS_VENDA",
+		"constraint_name" : "DF__PEC_PARAM__BLOQ___10F7EFB4",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "OBRIGAR_MOTIVO_PROVIDENCIA",
+		"constraint_name" : "DF__PEC_PARAM__OBRIG__15BCA4D1",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "POLITICA_PRECO_ETKA",
+		"constraint_name" : "DF__PEC_PARAM__POLIT__5384CD20",
+		"definition" : "('0')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "BUSCA_PEDIDO_REVENDA_LOGADA",
+		"constraint_name" : "DF__PEC_PARAM__BUSCA__566139CB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "CALCULO_ESTOQUE_MAXIMO",
+		"constraint_name" : "DF__PEC_PARAM__CALCU__0976C97D",
+		"definition" : "('P')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "BLOQ_ATEND_OUTRO_USUARIO_PEC",
+		"constraint_name" : "DF__PEC_PARAM__BLOQ___1D48B800",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "CONSISTIR_DIGIT_INVENTARIO",
+		"constraint_name" : "DF__PEC_PARAM__CONSI__147E67D5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "NAO_IMPRIMIR_DESC_NF_PROMO",
+		"constraint_name" : "DF__PEC_PARAM__NAO_I__1666B047",
+		"definition" : "('I')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "NOTIFICACAO_SEM_PEDIDO",
+		"constraint_name" : "DF__PEC_PARAM__NOTIF__184EF8B9",
+		"definition" : "('T')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "MOSTRA_DEMANDA_OUTRAS_FILIAIS",
+		"constraint_name" : "DF__PEC_PARAM__MOSTR__1A37412B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "BLOQUEAR_DTA_DOCUMENTO",
+		"constraint_name" : "DF__PEC_PARAM__BLOQU__45B69C0D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "MOSTRAR_MESCLAR_ATENDIMENTO",
+		"constraint_name" : "DF__PEC_PARAM__MOSTR__291BF40D",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "LIMITE_CREDITO_COND_PAG",
+		"constraint_name" : "DF__PEC_PARAM__LIMIT__2ACFFDAC",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "VERIFICAR_DUP_VENCIDA_FINAL",
+		"constraint_name" : "DF__PEC_PARAM__VERIF__2CB8461E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "NAO_IMPORTAR_XML_SEM_PEDIDO",
+		"constraint_name" : "DF__PEC_PARAM__NAO_I__7D5F040E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "UTILIZA_POLITICA_ORIGEM_PC_IT",
+		"constraint_name" : "DF__PEC_PARAM__UTILI__630B0085",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "INSERIR_ITENS_INTEGRA_ECOMM",
+		"constraint_name" : "DF__PEC_PARAM__INSER__146D51EF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "USA_PRECONTABIL",
+		"constraint_name" : "DF__PEC_PARAM__USA_P__43483C69",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "VALIDA_NCM_IMPORTA_XML",
+		"constraint_name" : "DF__PEC_PARAM__VALID__248EAB1F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "EXIBIR_NOVO_LAYOUT_ROM_SEP_PEC",
+		"constraint_name" : "DF__PEC_PARAM__EXIBI__2676F391",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "OCULTAR_COD_PECAS_EXP_ITENS",
+		"constraint_name" : "DF__PEC_PARAM__OCULT__74AA8DD3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "BLOQUEAR_ADD_QTDE_EXP_ITENS",
+		"constraint_name" : "DF__PEC_PARAM__BLOQU__759EB20C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "DIFERENCA_INFORMADO_CALCULADO",
+		"constraint_name" : "DF__PEC_PARAM__DIFER__2EF72AF9",
+		"definition" : "('I')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "CONFERIR_TODOS_ITENS_NF",
+		"constraint_name" : "DF__PEC_PARAM__CONFE__203EF74E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "GERAR_CONTATO_SEM_ESTOQUE",
+		"constraint_name" : "DF__PEC_PARAM__GERAR__0AA4BBEA",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "ICMS_RETIDO_RECOLHER_DIREFENCA",
+		"constraint_name" : "DF__PEC_PARAM__ICMS___395FAAD3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "CANCEL_NF_RET_PECAS_E_CONTATO",
+		"constraint_name" : "DF__PEC_PARAM__CANCE__55C6DF57",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "VISUALIZA_FECHAMENTO_DEVOLUCAO",
+		"constraint_name" : "DF__PEC_PARAM__VISUA__313F661E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "IMPORTAR_SOMENTE_VALOR_XML",
+		"constraint_name" : "DF__PEC_PARAM__IMPOR__23B060D6",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "TIPO_VENDA_ICMS_RENTABILIDADE",
+		"constraint_name" : "DF__PEC_PARAM__TIPO___5A617742",
+		"definition" : "('V')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "TIPO_ALIQ_ICMS_RENTABILIDADE",
+		"constraint_name" : "DF__PEC_PARAM__TIPO___5B559B7B",
+		"definition" : "('R')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "VALIDAR_ORD_DESC_CLI_PGTO_USU",
+		"constraint_name" : "DF__PEC_PARAM__VALID__321E7BBE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "EXIBE_VALOR_ULTIMA_VENDA",
+		"constraint_name" : "DF__PEC_PARAM__EXIBE__34FAE869",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "CALCULA_RENTAB_CUSTO_SALDOZERO",
+		"constraint_name" : "DF__PEC_PARAM__CALCU__7E89C91F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "UTILIZA_CATEGORIA_PEDIDO",
+		"constraint_name" : "DF__PEC_PARAM__UTILI__16EB6295",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "EXIBE_PEDIDO_COMPRA_NFE",
+		"constraint_name" : "DF__PEC_PARAM__EXIBE__353ADF8B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PARAMETRO",
+		"column_name" : "BLOQUEIA_EXP_ITENS_VENDA_PRAZO",
+		"constraint_name" : "DF__PEC_PARAM__BLOQU__18348C89",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PECA_BALCAO",
+		"column_name" : "CONTATO_BOUTIQUE",
+		"constraint_name" : "DF__PEC_PECA___CONTA__7207BD92",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PECA_BALCAO",
+		"column_name" : "INDTOT",
+		"constraint_name" : "DF__PEC_PECA___INDTO__081D54FA",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PECA_BALCAO_NFEMITIDA",
+		"column_name" : "CONTATO_BOUTIQUE",
+		"constraint_name" : "DF__PEC_PECA___CONTA__54D2BB1E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PECA_BALCAO_NFEMITIDA",
+		"column_name" : "INDTOT",
+		"constraint_name" : "DF__PEC_PECA___INDTO__09117933",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PECA_SELECAO",
+		"column_name" : "QUANTIDADE",
+		"constraint_name" : "DF__PEC_PECA___QUANT__33C2D45B",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_PECA_SELECAO",
+		"column_name" : "BLOQUEADO",
+		"constraint_name" : "DF__PEC_PECA___BLOQU__34B6F894",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_VENDA_PERDIDA",
+		"column_name" : "STATUS",
+		"constraint_name" : "DF__PEC_VENDA__STATU__4001BB6A",
+		"definition" : "('A')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEC_VENDA_RAPIDA_PARAMETROS",
+		"column_name" : "IMPRIMIR_LOCALIZACAO",
+		"constraint_name" : "DF__PEC_VENDA__IMPRI__37C2467B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PEU_PARAMETRO",
+		"column_name" : "UTILIZA_SPEEDER",
+		"constraint_name" : "DF__PEU_PARAM__UTILI__16451E08",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PNL_CONFIGURACAO",
+		"column_name" : "HABILITAR_FILTRO",
+		"constraint_name" : "DF__PNL_CONFI__HABIL__31ED387D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "PNL_CONFIGURACAO",
+		"column_name" : "ALTERAR_FILTRO",
+		"constraint_name" : "DF__PNL_CONFI__ALTER__33D580EF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "UTILIZA_CONSULTA_ICM",
+		"constraint_name" : "DF__REN_PARAM__UTILI__63849411",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "ICM_AUTOMATICO",
+		"constraint_name" : "DF__REN_PARAM__ICM_A__656CDC83",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "FUNCAO_TAXA_EXIBICAO",
+		"constraint_name" : "DF__REN_PARAM__FUNCA__675524F5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "NOVA_GARANTIA",
+		"constraint_name" : "DF__REN_PARAM__NOVA___6B25B5D9",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "UTILIZA_SALES_FORCE",
+		"constraint_name" : "DF__REN_PARAM__UTILI__6D0DFE4B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "ENVIO_OPCIONAIS_SALESFORCE",
+		"constraint_name" : "DF__REN_PARAM__ENVIO__617DE6BC",
+		"definition" : "('C')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "UTILIZA_SALES_FORCE_FULL",
+		"constraint_name" : "DF__REN_PARAM__UTILI__1E51EAD2",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "ENVIO_OPCIONAIS_SALES_FULL",
+		"constraint_name" : "DF__REN_PARAM__ENVIO__1F460F0B",
+		"definition" : "('C')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "INTEGRA_OS",
+		"constraint_name" : "DF__REN_PARAM__INTEG__30E59C59",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "INTEGRA_KCOMMERCE",
+		"constraint_name" : "RENPAR_INTKCO_DEF",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "BLOQUEIO_BIRCAR",
+		"constraint_name" : "DF__REN_PARAM__BLOQU__0BBF04A2",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "CLIENTE_DIF_RESERVA_SALES",
+		"constraint_name" : "DF__REN_PARAM__CLIEN__0F46481A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "UTILIZA_CHECKLIST_REN",
+		"constraint_name" : "DF__REN_PARAM__UTILI__1E9E659A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "UTILIZA_OPT_INOUT",
+		"constraint_name" : "DF__REN_PARAM__UTILI__38409E11",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "OPTI_ACEITA_DADOS_MONTADORA",
+		"constraint_name" : "DF__REN_PARAM__OPTI___41EA03DC",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "HABILITA_INTEGRACAO_RDCS",
+		"constraint_name" : "DF__REN_PARAM__HABIL__72CD3259",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "HABILITA_INTEGRACAO_RENEW",
+		"constraint_name" : "DF__REN_PARAM__HABIL__3CC62763",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "UTILIZA_PLR_API",
+		"constraint_name" : "DF__REN_PARAM__UTILI__24B993A8",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "GRAVA_LOG_PLR_API",
+		"constraint_name" : "DF__REN_PARAM__GRAVA__25ADB7E1",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "REN_PARAMETRO",
+		"column_name" : "SN_ATIVO_SALES_INTEGRATION",
+		"constraint_name" : "DF__REN_PARAM__SN_AT__36F83F74",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_DADOS_GARANTIA",
+		"column_name" : "RECONSIDERACAO",
+		"constraint_name" : "DF__SCA_DADOS__RECON__748A9242",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_DADOS_GARANTIA",
+		"column_name" : "ORIGEM_CRIACAO",
+		"constraint_name" : "DF__SCA_DADOS__ORIGE__757EB67B",
+		"definition" : "('A')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_DADOS_GARANTIA_RECLAMACAO",
+		"column_name" : "DEALERFRAS",
+		"constraint_name" : "DF__SCA_DADOS__DEALE__785B2326",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_EVENTOS_KAFKA",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__SCA_EVENT__ATIVO__5E9B5123",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_OFI_PECA_OS",
+		"column_name" : "PART_FLUIDO",
+		"constraint_name" : "DF__SCA_OFI_P__PART___57EE5394",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_OFI_TIPO_SERVICO",
+		"column_name" : "GOOD_WILL",
+		"constraint_name" : "DF__SCA_OFI_T__GOOD___05B51E44",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_ORDEM_SERVICO_DETALHE",
+		"column_name" : "ALOCAR_CHECKLIST",
+		"constraint_name" : "DF__SCA_ORDEM__ALOCA__6ED1B8EC",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_ORDEM_SERVICO_MOTORISTA",
+		"column_name" : "MOTORISTA_PRESENTE",
+		"constraint_name" : "DF__SCA_ORDEM__MOTOR__6824BB5D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_ORDEM_SERVICO_MOTORISTA",
+		"column_name" : "MOTORISTA_AUSENTE",
+		"constraint_name" : "DF__SCA_ORDEM__MOTOR__53FE9276",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "UTILIZA_INTEGRACAO_CORES",
+		"constraint_name" : "DF__SCA_PARAM__UTILI__4A945876",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "UTILIZA_INTEGRACAO_WHI",
+		"constraint_name" : "DF__SCA_PARAM__UTILI__4B887CAF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "UTILIZA_INTEGRACAO_PMS",
+		"constraint_name" : "DF__SCA_PARAM__UTILI__4C7CA0E8",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "AMBIENTE_ATIVO_PMS",
+		"constraint_name" : "DF__SCA_PARAM__AMBIE__4D70C521",
+		"definition" : "('H')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "UTILIZA_INTEGRACAO_SAINT",
+		"constraint_name" : "DF__SCA_PARAM__UTILI__4E64E95A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "AMBIENTE_ATIVO_SAINT",
+		"constraint_name" : "DF__SCA_PARAM__AMBIE__4F590D93",
+		"definition" : "('H')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "VALOR_SAINT",
+		"constraint_name" : "DF__SCA_PARAM__VALOR__504D31CC",
+		"definition" : "('0')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "UTILIZA_INTEGRACAO_APIVEC",
+		"constraint_name" : "DF__SCA_PARAM__UTILI__51415605",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "AMBIENTE_ATIVO_APIVEC",
+		"constraint_name" : "DF__SCA_PARAM__AMBIE__52357A3E",
+		"definition" : "('H')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "CRM_UTILIZA_INTEGRACAO",
+		"constraint_name" : "DF__SCA_PARAM__CRM_U__53299E77",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "CRM_AMBIENTE_ATIVO",
+		"constraint_name" : "DF__SCA_PARAM__CRM_A__541DC2B0",
+		"definition" : "('H')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "DSM_UTILIZA_INTEGRACAO",
+		"constraint_name" : "DF__SCA_PARAM__DSM_U__3D254EBF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "DSM_AMBIENTE_ATIVO",
+		"constraint_name" : "DF__SCA_PARAM__DSM_A__3E1972F8",
+		"definition" : "('H')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "CLAW_AMBIENTE_ATIVO",
+		"constraint_name" : "DF__SCA_PARAM__CLAW___1D428F12",
+		"definition" : "('H')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "CLAW_UTILIZA_INTEGRACAO",
+		"constraint_name" : "DF__SCA_PARAM__CLAW___1E36B34B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "CT_UTILIZA_INTEGRACAO",
+		"constraint_name" : "DF__SCA_PARAM__CT_UT__37E176B5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "CT_AMBIENTE_ATIVO",
+		"constraint_name" : "DF__SCA_PARAM__CT_AM__38D59AEE",
+		"definition" : "('H')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "CT_API_CONTRATO_GRANT_TYPE",
+		"constraint_name" : "DF__SCA_PARAM__CT_AP__39C9BF27",
+		"definition" : "('CLIENT_CREDENTIALS')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO",
+		"column_name" : "CT_API_MANUT_GRANT_TYPE",
+		"constraint_name" : "DF__SCA_PARAM__CT_AP__3ABDE360",
+		"definition" : "('PASSWORD')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO_KAFKA",
+		"column_name" : "SECURITYPROTOCOL",
+		"constraint_name" : "DF__SCA_PARAM__SECUR__6177BDCE",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO_KAFKA",
+		"column_name" : "TOPICO_ATIVO",
+		"constraint_name" : "DF__SCA_PARAM__TOPIC__626BE207",
+		"definition" : "('T')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PARAMETRO_KAFKA",
+		"column_name" : "AUTOOFFSETRESET",
+		"constraint_name" : "DF__SCA_PARAM__AUTOO__63600640",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SCA_PEDIDO_PECAS",
+		"column_name" : "COD_SEGMENTO_PECA",
+		"constraint_name" : "DF__SCA_PEDID__COD_S__482CED17",
+		"definition" : "('E02')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SIM_LOG",
+		"column_name" : "SUCESSO",
+		"constraint_name" : "DF__SIM_LOG__SUCESSO__0BDFCB8A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SIM_LOG",
+		"column_name" : "REGISTRO_ESPECIFICO",
+		"constraint_name" : "DF__SIM_LOG__REGISTR__0CD3EFC3",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SIM_PARAMETRO",
+		"column_name" : "USA_INTEGRACAO",
+		"constraint_name" : "DF__SIM_PARAM__USA_I__020226EC",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SIM_PARAMETRO",
+		"column_name" : "USA_GRUPO_SERVICO",
+		"constraint_name" : "DF__SIM_PARAM__USA_G__02F64B25",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SIM_PARAMETRO",
+		"column_name" : "INTEGRA_CDT",
+		"constraint_name" : "DF__SIM_PARAM__INTEG__03EA6F5E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SIM_PARAMETRO",
+		"column_name" : "INTEGRA_DEVOLUCAO_PECA",
+		"constraint_name" : "DF__SIM_PARAM__INTEG__04DE9397",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SIM_PARAMETRO",
+		"column_name" : "INTEGRA_DIAGNOSTICO",
+		"constraint_name" : "DF__SIM_PARAM__INTEG__05D2B7D0",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SIM_PARAMETRO",
+		"column_name" : "INTEGRA_QUILOMETRAGEM",
+		"constraint_name" : "DF__SIM_PARAM__INTEG__06C6DC09",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SIS_LOG",
+		"column_name" : "DETALHES",
+		"constraint_name" : "DF__SIS_LOG__DETALHE__260A7D38",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SIS_PROCESSO_LOG",
+		"column_name" : "GRAVAR_DEBUG",
+		"constraint_name" : "DF__SIS_PROCE__GRAVA__2239EC54",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "STE_CATEGORIA_FATURAMENTO",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__STE_CATEG__ATIVO__5F111DC6",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "SUZ_PARAMETRO",
+		"column_name" : "INTEGRA_HPEPLAY",
+		"constraint_name" : "DF__SUZ_PARAM__INTEG__3B2E20A2",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "TEL_PARAMETRO",
+		"column_name" : "TELE_ATENDIMENTO_ATIVO",
+		"constraint_name" : "DF__TEL_PARAM__TELE___3A48E214",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "TEL_PARAMETRO",
+		"column_name" : "TIPO_ATENDIMENTO",
+		"constraint_name" : "DF__TEL_PARAM__TIPO___3B3D064D",
+		"definition" : "('A')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "TOY_AUTOMAKER_MODELOS",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__TOY_AUTOM__ATIVO__2D15D6CC",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "TOY_ITEM_SUGESTAO",
+		"column_name" : "QUANTIDADE_PENDENTE_BO",
+		"constraint_name" : "DF__TOY_ITEM___QUANT__0BFEFBC4",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "TOY_PARAMETRO",
+		"column_name" : "NOTA_MINIMA_APS",
+		"constraint_name" : "DF__TOY_PARAM__NOTA___3B63F623",
+		"definition" : "((9.2))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "TOY_SUGESTAO",
+		"column_name" : "STATUS",
+		"constraint_name" : "DF__TOY_SUGES__STATU__0A16B352",
+		"definition" : "('G')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_CONTA_FI",
+		"column_name" : "INATIVO_CONSULTAS",
+		"constraint_name" : "DF__VEI_CONTA__INATI__12A5D065",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_FORMACAO",
+		"column_name" : "VERIFICADOR",
+		"constraint_name" : "DF__VEI_FORMA__VERIF__5AD0E92D",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_FORMACAO",
+		"column_name" : "SEM_VEICULO",
+		"constraint_name" : "DF__VEI_FORMA__SEM_V__1A8159EE",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_FORMULA_LINHA",
+		"column_name" : "EXCLUI_TITULO_NA_DEVOLUCAO",
+		"constraint_name" : "DF__VEI_FORMU__EXCLU__61674175",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_FORMULA_LINHA",
+		"column_name" : "SOMA_OUTRAS_DESPESAS",
+		"constraint_name" : "DF__VEI_FORMU__SOMA___7D86BF3B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_FORMULA_LINHA",
+		"column_name" : "NAO_CONSIDERAR_ICMS_SEG_CONT",
+		"constraint_name" : "DF__VEI_FORMU__NAO_C__7B76BB9C",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MODALIDADE",
+		"column_name" : "PERMITE_ALT_VALOR",
+		"constraint_name" : "DF__VEI_MODAL__PERMI__523C6E83",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MODALIDADE",
+		"column_name" : "IMP_VALOR_OBS_PROPOSTA",
+		"constraint_name" : "DF__VEI_MODAL__IMP_V__533092BC",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MODALIDADE",
+		"column_name" : "IMP_VALOR_OBS_INTERNA_PROPOSTA",
+		"constraint_name" : "DF__VEI_MODAL__IMP_V__5424B6F5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MODALIDADE",
+		"column_name" : "IMP_OBS_PROPOSTA",
+		"constraint_name" : "DF__VEI_MODAL__IMP_O__5518DB2E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MODALIDADE",
+		"column_name" : "IMP_OBS_INTERNA_PROPOSTA",
+		"constraint_name" : "DF__VEI_MODAL__IMP_O__560CFF67",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MODALIDADE",
+		"column_name" : "SOLICITA_OBS_PROPOSTA",
+		"constraint_name" : "DF__VEI_MODAL__SOLIC__570123A0",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MODALIDADE",
+		"column_name" : "LANCAR_CONDPAG_AUT",
+		"constraint_name" : "DF__VEI_MODAL__LANCA__57F547D9",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MODALIDADE",
+		"column_name" : "LANCAR_FI_AUT",
+		"constraint_name" : "DF__VEI_MODAL__LANCA__58E96C12",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MODALIDADE",
+		"column_name" : "OBRIGA_PROPOSTA",
+		"constraint_name" : "DF__VEI_MODAL__OBRIG__59DD904B",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MODALIDADE",
+		"column_name" : "INATIVO_CONSULTA",
+		"constraint_name" : "DF__VEI_MODAL__INATI__5AD1B484",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MODALIDADE",
+		"column_name" : "SOLICITA_PERGUNTA",
+		"constraint_name" : "DF__VEI_MODAL__SOLIC__5BC5D8BD",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MODELO",
+		"column_name" : "GERA_DETALHE_NFE",
+		"constraint_name" : "DF__VEI_MODEL__GERA___756E3A22",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_MODELO_INTEGRACAO",
+		"column_name" : "LEMBRAR_SUGESTAO",
+		"constraint_name" : "DF__VEI_MODEL__LEMBR__7D9EFB30",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_NEGOCIACAO",
+		"column_name" : "ICMSDESONERADO_DESCONTADONOTA",
+		"constraint_name" : "DF__VEI_NEGOC__ICMSD__387C9C80",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "CONSULTAR_RETORNO_FIN",
+		"constraint_name" : "DF__VEI_PARAM__CONSU__4495F89D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "OBRIGAR_WEBMOTORS_AVALIACAO",
+		"constraint_name" : "DF__VEI_PARAM__OBRIG__467E410F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "OBRIGAR_FOTO_CONSULTA_MULTAS",
+		"constraint_name" : "DF__VEI_PARAM__OBRIG__4A4ED1F3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "DIAS_ANALISE_AVALIACOES",
+		"constraint_name" : "DF__VEI_PARAM__DIAS___50FBCF82",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "IMP_DTA_PREV_PROPOSTA",
+		"constraint_name" : "DF__VEI_PARAM__IMP_D__51EFF3BB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "UTILIZA_INTEGRACAO_VMOTORS",
+		"constraint_name" : "DF__VEI_PARAM__UTILI__54CC6066",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "IMPRIME_LINHA_DESCONTO",
+		"constraint_name" : "DF__VEI_PARAM__IMPRI__57A8CD11",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "IMPRIME_IMAGENS_AVALIACAO",
+		"constraint_name" : "DF__VEI_PARAM__IMPRI__5A8539BC",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BUSCA_DESPESA_EMPRESAS",
+		"constraint_name" : "DF__VEI_PARAM__BUSCA__5D2345F3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "VINCULA_PROPOSTA_QUITADA",
+		"constraint_name" : "DF__VEI_PARAM__VINCU__5F0B8E65",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BLOQUEAR_DTA_ENTRADA",
+		"constraint_name" : "DF__VEI_PARAM__BLOQU__11EC13ED",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BLOQ_AVALICAO_DUPLICADA",
+		"constraint_name" : "DF__VEI_PARAM__BLOQ___198D35B5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "OBRIGAR_VENDA_PERDIDA",
+		"constraint_name" : "DF__VEI_PARAM__OBRIG__1B757E27",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "CONSISTE_BASE_ICMS",
+		"constraint_name" : "DF__VEI_PARAM__CONSI__5290A8E7",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BLOQ_OPC_FS_PROP_ABERTA",
+		"constraint_name" : "DF__VEI_PARAM__BLOQ___593DA676",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BLOQ_OPC_FS_PROP_PENDENTE",
+		"constraint_name" : "DF__VEI_PARAM__BLOQ___5A31CAAF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BLOQ_OPC_FS_PROP_APROVGEREN",
+		"constraint_name" : "DF__VEI_PARAM__BLOQ___5B25EEE8",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BLOQ_OPC_FS_PROP_APROVFINAN",
+		"constraint_name" : "DF__VEI_PARAM__BLOQ___5C1A1321",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BLOQ_OPC_FS_PROP_NFEMITIDA",
+		"constraint_name" : "DF__VEI_PARAM__BLOQ___5D0E375A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BLOQ_OPC_FS_PROP_CANCELADA",
+		"constraint_name" : "DF__VEI_PARAM__BLOQ___5E025B93",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BLOQ_OPC_FS_PROP_ENCERRADA",
+		"constraint_name" : "DF__VEI_PARAM__BLOQ___5EF67FCC",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "ENVIAR_TODAS_VENDAS_FIB",
+		"constraint_name" : "DF__VEI_PARAM__ENVIA__202524AB",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "SOBREPOR_OBSERVACOES_FIB",
+		"constraint_name" : "DF__VEI_PARAM__SOBRE__211948E4",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "IMPORTAR_AGREGADOS_FIB",
+		"constraint_name" : "DF__VEI_PARAM__IMPOR__220D6D1D",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "SOBREPOR_CONDPAGTO_FIB",
+		"constraint_name" : "DF__VEI_PARAM__SOBRE__23019156",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "ALTERAR_AGREGADOS_FIB",
+		"constraint_name" : "DF__VEI_PARAM__ALTER__23F5B58F",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "ALTERAR_RECEITAS_FIB",
+		"constraint_name" : "DF__VEI_PARAM__ALTER__24E9D9C8",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "FATURAMENTO_CDC",
+		"constraint_name" : "DF__VEI_PARAM__FATUR__138A439C",
+		"definition" : "('C')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BLOQ_VENDA_SEM_NF_USADO",
+		"constraint_name" : "DF__VEI_PARAM__BLOQ___338CFEDA",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BLOQ_VERIFICA_ICMS_RETIDO",
+		"constraint_name" : "DF__VEI_PARAM__BLOQ___34812313",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BAIXAR_ADIANTAMENTO_VD",
+		"constraint_name" : "DF__VEI_PARAM__BAIXA__6C7B6373",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "REC_TRANSF_OUTRA_REVENDA",
+		"constraint_name" : "DF__VEI_PARAM__REC_T__0329BEA1",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "FAZ_TRANSF_OUTRA_REVENDA",
+		"constraint_name" : "DF__VEI_PARAM__FAZ_T__041DE2DA",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BLOQUEAR_DTA_DOCUMENTO",
+		"constraint_name" : "DF__VEI_PARAM__BLOQU__44C277D4",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "USA_INTEGRACAO_AVONALE",
+		"constraint_name" : "DF__VEI_PARAM__USA_I__4E4BE20E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "AVONALE_FIN_INT_OBRIGATORIO",
+		"constraint_name" : "DF__VEI_PARAM__AVONA__6AB31692",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "AVONALE_FIN_EXT_OBRIGATORIO",
+		"constraint_name" : "DF__VEI_PARAM__AVONA__6BA73ACB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "AVONALE_AVISTA_OBRIGATORIO",
+		"constraint_name" : "DF__VEI_PARAM__AVONA__6C9B5F04",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "CONSOLIDA_CAMPOS",
+		"constraint_name" : "DF__VEI_PARAM__CONSO__103A6C53",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "NF_VEI_USADO_ANDAMENTO",
+		"constraint_name" : "DF__VEI_PARAM__NF_VE__419CBDBD",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "UTILIZA_PRE_RESERVA",
+		"constraint_name" : "DF__VEI_PARAM__UTILI__4385062F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "PRAZO_UTIL_RESERVA",
+		"constraint_name" : "DF__VEI_PARAM__PRAZO__44792A68",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "AVONALE_ALT_CONDICAO",
+		"constraint_name" : "DF__VEI_PARAM__AVONA__0CD58671",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "CONF_ENT_AUT_PORTARIA",
+		"constraint_name" : "DF__VEI_PARAM__CONF___7C6ADFD5",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "AVONALE_ALT_AVALIACAO",
+		"constraint_name" : "DF__VEI_PARAM__AVONA__26F6167E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "DISPONIVEL_RESERVA",
+		"constraint_name" : "DF__VEI_PARAM__DISPO__3E04645F",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "LISTAR_SOMENTE_CR_PORTARIA",
+		"constraint_name" : "DF__VEI_PARAM__LISTA__4B295553",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "ENCERRAR_PROPOSTA_MBB",
+		"constraint_name" : "DF__VEI_PARAM__ENCER__2CC4C9C4",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "OBRIGA_KM_RECEB_VEIC",
+		"constraint_name" : "DF__VEI_PARAM__OBRIG__4061AE1D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "OBRIGAR_MOLICAR",
+		"constraint_name" : "DF__VEI_PARAM__OBRIG__14D8319A",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "DTA_INVENTARIO_VEICULO",
+		"constraint_name" : "DF__VEI_PARAM__DTA_I__11C6BAC5",
+		"definition" : "('E')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "EMISSAO_NOTA_DEV_PESSOA_JUR",
+		"constraint_name" : "DF__VEI_PARAM__EMISS__4822CB76",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "GRAVAR_VAL_CONTRIBUICAO_NFVEND",
+		"constraint_name" : "DF__VEI_PARAM__GRAVA__779CD46E",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "SN_UTILIZA_SERVICO_CONECTADO",
+		"constraint_name" : "DF__VEI_PARAM__SN_UT__726E0AFD",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "BLOQ_APROV_GER_DISP_VENDA",
+		"constraint_name" : "DF__VEI_PARAM__BLOQ___7B8D60E3",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "EXIBE_VLR_CORTESIA_PROP_VENDA",
+		"constraint_name" : "DF__VEI_PARAM__EXIBE__400286C1",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "CONSUMIDOR_FINAL_PJ_PADRAO",
+		"constraint_name" : "DF__VEI_PARAM__CONSU__7BAD5C74",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARAMETRO",
+		"column_name" : "ABATER_DESC_PERC_LUCRO",
+		"constraint_name" : "DF__VEI_PARAM__ABATE__077414DB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PARTE_VEICULO",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__VEI_PARTE__ATIVO__5F49EED9",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PROPOSTA",
+		"column_name" : "TRANSFERENCIA_AUTOMATICA",
+		"constraint_name" : "DF__VEI_PROPO__TRANS__05120713",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PROPOSTA",
+		"column_name" : "SN_SERVICO_CONECTADO",
+		"constraint_name" : "DF__VEI_PROPO__SN_SE__73622F36",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_PROPOSTA_MOVIMENTACAO",
+		"column_name" : "DATA_STATUS_PROPOSTA",
+		"constraint_name" : "DF__VEI_PROPO__DATA___59584470",
+		"definition" : "(getdate())"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_RENAVE_APROVACAO",
+		"column_name" : "SAIDA_RENAVE",
+		"constraint_name" : "DF__VEI_RENAV__SAIDA__22A662AD",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_RENAVE_SERVICE",
+		"column_name" : "SERVICO",
+		"constraint_name" : "DF__VEI_RENAV__SERVI__7203F6A9",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_TIPO_INTERESSE",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__VEI_TIPO___ATIVO__11D56EA6",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_TIPO_VEICULO",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__VEI_TIPO___ATIVO__169A23C3",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_VEICULO",
+		"column_name" : "COD_EAN_GTIN",
+		"constraint_name" : "SEM_GTIN",
+		"definition" : "('SEM GTIN')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_VEICULO",
+		"column_name" : "COD_EAN_TRIB_GTIN",
+		"constraint_name" : "SEM_GTIN2",
+		"definition" : "('SEM GTIN')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_VEICULO",
+		"column_name" : "ENVIADO_DATALAKE",
+		"constraint_name" : "DF__VEI_VEICU__ENVIA__66C28A1D",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_VEICULO",
+		"column_name" : "COD_SEGMENTO_NCM",
+		"constraint_name" : "DF__VEI_VEICU__COD_S__5A7CAEC9",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_VEICULO",
+		"column_name" : "DISPONIVEL_ECOMMERCE",
+		"constraint_name" : "DF__VEI_VEICU__DISPO__5C3E0765",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_VEICULO",
+		"column_name" : "INDTOT",
+		"constraint_name" : "DF__VEI_VEICU__INDTO__0ECA5289",
+		"definition" : "((1))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VEI_VISAO_VEICULO",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__VEI_VISAO__ATIVO__3059F5C6",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_MOB_CATEGORIA",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__VWB_MOB_C__ATIVO__45ABAF15",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_MOB_ITEMCHECK",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__VWB_MOB_I__ATIVO__44B78ADC",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_MOB_MIDIADICA",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__VWB_MOB_M__ATIVO__42CF426A",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_MOB_OPCAONOK",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__VWB_MOB_O__ATIVO__43C366A3",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_MOB_SOLICITACAO",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__VWB_MOB_S__ATIVO__41DB1E31",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_PARAMETRO",
+		"column_name" : "ENVIAR_ORDERSERVICE",
+		"constraint_name" : "DF__VWB_PARAM__ENVIA__21D6CC45",
+		"definition" : "('0')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_PARAMETRO",
+		"column_name" : "ENVIAR_FISHINFOBOX",
+		"constraint_name" : "DF__VWB_PARAM__ENVIA__23BF14B7",
+		"definition" : "('0')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_PARAMETRO",
+		"column_name" : "UTILIZA_RVS",
+		"constraint_name" : "DF__VWB_PARAM__UTILI__25A75D29",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_PARAMETRO",
+		"column_name" : "ENVIAR_ORDERSERVICEPARTS",
+		"constraint_name" : "DF__VWB_PARAM__ENVIA__2977EE0D",
+		"definition" : "('0')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_PARAMETRO",
+		"column_name" : "GERAR_TITULOS_NFVEIC",
+		"constraint_name" : "DF__VWB_PARAM__GERAR__6E83A776",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_PARAMETRO",
+		"column_name" : "GERAR_TITULOS_NFPECAS",
+		"constraint_name" : "DF__VWB_PARAM__GERAR__6F77CBAF",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_PARAMETRO",
+		"column_name" : "UTILIZA_SOB",
+		"constraint_name" : "DF__VWB_PARAM__UTILI__548ECB49",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_PARAMETRO",
+		"column_name" : "SG_NOTIFICACAO_CREDITO",
+		"constraint_name" : "DF__VWB_PARAM__SG_NO__7D26CC88",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_PARAMETRO",
+		"column_name" : "TRATAR_EDICAO_DDX",
+		"constraint_name" : "DF__VWB_PARAM__TRATA__662E5897",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_PARAMETRO",
+		"column_name" : "BLOQUEIO_ENTRADA_VEICULO",
+		"constraint_name" : "DF__VWB_PARAM__BLOQU__4FB90046",
+		"definition" : "('S')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "VWB_RESPONSE_ORMA",
+		"column_name" : "DTA_RECEBIMENTO",
+		"constraint_name" : "DF__VWB_RESPO__DTA_R__39407A99",
+		"definition" : "(getdate())"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "WOM_BOSCH_CESTAS",
+		"column_name" : "STATUS_WOM",
+		"constraint_name" : "DF__WOM_BOSCH__STATU__2ED7FABF",
+		"definition" : "('IN_PROGRESS')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "WOM_PARAMETRO",
+		"column_name" : "ATIVO",
+		"constraint_name" : "DF__WOM_PARAM__ATIVO__2B0769DB",
+		"definition" : "('N')"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "WOM_PARAMETRO",
+		"column_name" : "MARKUP",
+		"constraint_name" : "DF__WOM_PARAM__MARKU__2BFB8E14",
+		"definition" : "((0))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "WOM_PARAMETRO",
+		"column_name" : "INTERVALO_CONSULTA",
+		"constraint_name" : "DF__WOM_PARAM__INTER__2CEFB24D",
+		"definition" : "((60))"
+	},
+	{
+		"schema_name" : "dbo",
+		"table_name" : "YAM_PARAMETRO",
+		"column_name" : "UTILIZA_CUPOM_REVISAO",
+		"constraint_name" : "DF__YAM_PARAM__UTILI__5FEAA405",
+		"definition" : "('N')"
+	}
+]}
